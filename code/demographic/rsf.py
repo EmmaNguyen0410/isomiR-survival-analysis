@@ -14,7 +14,7 @@ pd.set_option('display.max_columns', None)
 
 ###### Data processing ########
 # Read data
-raw_df = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/raw_data3.csv", index_col=False)
+raw_df = pd.read_csv("../../data/ml_inputs/raw_data3.csv", index_col=False)
 raw_df = raw_df.drop(['case_submitter_id'], axis=1)
 raw_df['survival_in_days'] = raw_df['survival_in_days'].astype(float)
 
@@ -44,7 +44,7 @@ for train_index, test_index in cv:
     # Add test score to scores 
     scores.append(estimator.score(X_test_data, y_test_data))
     # export scores to csv 
-    pd.DataFrame({'score': scores}).to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/signed_ranks_test/demographic/rsf.csv", index=False)
+    pd.DataFrame({'score': scores}).to_csv("../../data/signed_ranks_test/demographic/rsf.csv", index=False)
 
 
 ########## Grid Search ############

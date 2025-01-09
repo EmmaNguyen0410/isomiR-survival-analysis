@@ -8,7 +8,7 @@ set_config(display="text")
 from sklearn.model_selection import train_test_split
 
 # Read data
-raw_df = pd.read_csv("./raw_data.csv", index_col=False)
+raw_df = pd.read_csv("../../data/raw_data.csv", index_col=False)
 raw_df = raw_df[raw_df['survival_in_days'] != "'--"]
 raw_df['survival_in_days'] = raw_df['survival_in_days'].astype(float)
 

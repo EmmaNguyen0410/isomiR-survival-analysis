@@ -14,7 +14,7 @@ pd.set_option('display.max_columns', None)
 
 ###### Data processing ########
 # Read data
-raw_df = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/raw_data.csv", index_col=False)
+raw_df = pd.read_csv("../../data/ml_inputs/raw_data.csv", index_col=False)
 raw_df = raw_df[raw_df['survival_in_days'] != "'--"]
 raw_df['survival_in_days'] = raw_df['survival_in_days'].astype(float)
 

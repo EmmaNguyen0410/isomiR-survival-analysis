@@ -3,7 +3,7 @@ import os
 from collections import Counter
 
 
-data_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data"
+data_path = "../../data"
 
 def get_survival_details():
     """
@@ -85,7 +85,7 @@ def get_miR_seqs(file_path):
     
 def curate_miRNA_quantification(miR_seq_df):
     # Path to folder 
-    raw_miRNAs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/gdc_download_20240526_080506.757472"
+    raw_miRNAs_quantification_path = "../../data/gdc_download_20240526_080506.757472"
 
     # List of mirnas.quantification.txt files 
     sub_folders = os.listdir(raw_miRNAs_quantification_path)
@@ -121,7 +121,7 @@ def annotate_miRNA():
     miRNA_seqs = set()
     
     # read all files
-    curated_miRNAs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_miRNAs_quantification_v1"
+    curated_miRNAs_quantification_path = "../../data/curated_miRNAs_quantification_v1"
     # Loop through all curated files. For each file, get the list of miRNA_seq
     for file in os.listdir(curated_miRNAs_quantification_path):
         # Read the curated quantification of miRNAs
@@ -131,13 +131,13 @@ def annotate_miRNA():
 
     # Export unique miRNAs to excel with id 
     annotated_miRNAs = pd.DataFrame({"miRNA_ID": range(1, len(miRNA_seqs) + 1), "miRNA_seq": list(miRNA_seqs)})
-    annotated_miRNAs.to_csv(f"/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/annotation_guide/annotated_miRNAs.csv", index=False)
+    annotated_miRNAs.to_csv(f"../../data/annotation_guide/annotated_miRNAs.csv", index=False)
     
 def add_miRNA_ID_to_curated_miRNA_quantification():
     # read annoted miRNAs 
     annotated_miRNAs = pd.read_csv("../../data/annotation_guide/annotated_miRNAs.csv")
     # read all files
-    curated_miRNAs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_miRNAs_quantification_v1"
+    curated_miRNAs_quantification_path = "../../data/curated_miRNAs_quantification_v1"
     # Loop through all curated files. For each file, add miRNA ID
     for file in os.listdir(curated_miRNAs_quantification_path):
         # Curated quantification of miRNAs
@@ -150,7 +150,7 @@ def add_miRNA_ID_to_curated_miRNA_quantification():
 def filter_miRNA_ids_appear_in_n_samples(ratio):
     sample_miRNAs = []
     # read all files
-    curated_miRNAs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_miRNAs_quantification_v2"
+    curated_miRNAs_quantification_path = "../../data/curated_miRNAs_quantification_v2"
     # Loop through all curated files. For each file, get the list of miRNA_seq
     for file in os.listdir(curated_miRNAs_quantification_path):
         # Read the curated quantification of miRNAs
@@ -172,7 +172,7 @@ def set_up_normal_primary_tumour():
     primary_tumour_sample_df = sample_df[sample_df['sample_type'] == 'Primary Tumor']
     merged = primary_tumour_sample_df.merge(normal_sample_df, how='inner', on='case_submitter_id')
 
-    curated_miRNAs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_miRNAs_quantification_v2"
+    curated_miRNAs_quantification_path = "../../data/curated_miRNAs_quantification_v2"
 
     # copy each file to folder corresponding to sample type and rename to be case id
     for _, r in merged.iterrows():
@@ -181,37 +181,37 @@ def set_up_normal_primary_tumour():
         # only retain miRNA_ID, read_count and reoroder columns
         primary_df = primary_df[['miRNA_ID', 'read_count']]
         # save to primary folder with new name 
-        primary_df.to_csv(f"/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/deseq2/primary2/{r['case_submitter_id']}_primary.csv", index=False, header=False)
+        primary_df.to_csv(f"../../data/deseq2/primary2/{r['case_submitter_id']}_primary.csv", index=False, header=False)
         # read normal tissue file
         normal_df = pd.read_csv(f"{curated_miRNAs_quantification_path}/{r['file_name_y']}.csv")
         # only retain miRNA_ID, read_count and reoroder columns
         normal_df = normal_df[['miRNA_ID', 'read_count']]
         # save to normal folder with new name 
-        normal_df.to_csv(f"/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/deseq2/normal2/{r['case_submitter_id']}_normal.csv", index=False, header=False)
+        normal_df.to_csv(f"../../data/deseq2/normal2/{r['case_submitter_id']}_normal.csv", index=False, header=False)
 
 def filter_de_dominant_miRNAs():
-    de_miRNAs = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/deseq2/summary2.tabular", delim_whitespace=True, header=None)
+    de_miRNAs = pd.read_csv("../../data/deseq2/summary2.tabular", delim_whitespace=True, header=None)
     de_miRNA_ids = set(de_miRNAs[0])
     dominant_miRNA_ids = filter_miRNA_ids_appear_in_n_samples(0.8)
     de_dominant_miRNA_ids = dominant_miRNA_ids.intersection(de_miRNA_ids)
     de_dominant_miRNA_ids_df = pd.DataFrame({'miRNA_ID': list(de_dominant_miRNA_ids)})
-    de_dominant_miRNA_ids_df.to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/annotation_guide/de_dominant_miRNA_ids.csv", index=False)
-    curated_miRNAs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_miRNAs_quantification_v2"
+    de_dominant_miRNA_ids_df.to_csv("../../data/annotation_guide/de_dominant_miRNA_ids.csv", index=False)
+    curated_miRNAs_quantification_path = "../../data/curated_miRNAs_quantification_v2"
 
     for file in os.listdir(curated_miRNAs_quantification_path):
         # Read the curated quantification of miRNAs
         curated_miRNAs_df = pd.read_csv(f"{curated_miRNAs_quantification_path}/{file}")   
         curated_miRNAs_df = curated_miRNAs_df[curated_miRNAs_df['miRNA_ID'].isin(de_dominant_miRNA_ids)]    
         curated_miRNAs_df = curated_miRNAs_df[['read_count', 'miRNA_ID']]
-        curated_miRNAs_df.to_csv(f"/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_miRNAs_quantification_v3/{file}", index=False)
+        curated_miRNAs_df.to_csv(f"../../data/curated_miRNAs_quantification_v3/{file}", index=False)
 
 def create_miRNA_profiles(): 
     # read de miRNA_ID 
-    de_dominant_miRNAs = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/annotation_guide/de_dominant_miRNA_ids.csv")
+    de_dominant_miRNAs = pd.read_csv("../../data/annotation_guide/de_dominant_miRNA_ids.csv")
     de_dominant_miRNA_ids = list(de_dominant_miRNAs['miRNA_ID'])
     combined_curated_miRNAs = pd.DataFrame(columns = de_dominant_miRNA_ids + ['file_name'])
 
-    curated_miRNAs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_miRNAs_quantification_v3"
+    curated_miRNAs_quantification_path = "../../data/curated_miRNAs_quantification_v3"
 
     for file in os.listdir(curated_miRNAs_quantification_path):
         # Curated quantification of miRNAs
@@ -224,7 +224,7 @@ def create_miRNA_profiles():
         curated_miRNAs_dict['file_name'] = file.replace(".csv", "")
         combined_curated_miRNAs = combined_curated_miRNAs.append(curated_miRNAs_dict, ignore_index=True)
     
-    combined_curated_miRNAs.to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/miRNA_profiles.csv", index=False)
+    combined_curated_miRNAs.to_csv("../../data/ml_inputs/miRNA_profiles.csv", index=False)
 
 def create_ml_input(combined_curated_miRNAs, clinical_sample_df):
     # Merge ml_input with clinical_sample_df to get status and survival time 
@@ -232,7 +232,7 @@ def create_ml_input(combined_curated_miRNAs, clinical_sample_df):
     # Drop file_name, case_submitter_id columns
     ml_input = ml_input.drop(['file_name', 'case_submitter_id', 'sample_type'], axis = 1)
     # Export to csv
-    ml_input.to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/raw_data2.csv", index=False)
+    ml_input.to_csv("../../data/ml_inputs/raw_data2.csv", index=False)
 
 def select_feature():
     cox_features = [  
@@ -241,11 +241,11 @@ def select_feature():
         '1049', '1740', '231', '1322'
     ]
     # get selected rsf features
-    rsf_features = list(pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/selected_features/miRNAs_raw_rsf.csv", sep=' ')['miRNA_ID'])
+    rsf_features = list(pd.read_csv("../../data/selected_features/miRNAs_raw_rsf.csv", sep=' ')['miRNA_ID'])
     rsf_features = [str(id) for id in rsf_features]
 
     # get selected svm features 
-    svm_features = list(pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/selected_features/miRNAs_raw_svm.csv", sep=' ')['miRNA_ID'])
+    svm_features = list(pd.read_csv("../../data/selected_features/miRNAs_raw_svm.csv", sep=' ')['miRNA_ID'])
     svm_features = [str(id) for id in svm_features]
 
     # combine 3 list 
@@ -260,7 +260,7 @@ def select_feature():
     #### Approach 2 #####
     # selected_features = list(set(all_features))
 
-    pd.DataFrame({'feature': selected_features}).to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/selected_features/miRNAs.csv", index=False)
+    pd.DataFrame({'feature': selected_features}).to_csv("../../data/selected_features/miRNAs.csv", index=False)
 
 ## main ##
 # survival_details_df = get_survival_details()
@@ -275,7 +275,7 @@ def select_feature():
 # set_up_normal_primary_tumour()
 # filter_de_dominant_miRNAs()
 # create_miRNA_profiles()
-# combined_curated_miRNAs = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/miRNA_profiles.csv")
+# combined_curated_miRNAs = pd.read_csv("../../data/ml_inputs/miRNA_profiles.csv")
 # create_ml_input(combined_curated_miRNAs, sample_survival_details_df)
 select_feature()
 

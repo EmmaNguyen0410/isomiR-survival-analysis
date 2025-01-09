@@ -3,7 +3,7 @@ import os
 from collections import Counter
 
 
-data_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data"
+data_path = "../../data"
 
 
 def get_survival_details():
@@ -99,7 +99,7 @@ def get_isomiR_seq(row):
     
 def curate_isomiR_quantification(miR_stemloop_seq_details_df):
     # Path to folder 
-    raw_isomiRs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/gdc_download_20240217_032435.276336"
+    raw_isomiRs_quantification_path = "../../data/gdc_download_20240217_032435.276336"
 
     # List of isoforms.quantification.txt files 
     sub_folders = os.listdir(raw_isomiRs_quantification_path)
@@ -137,7 +137,7 @@ def annotate_isomiR():
     isomiR_seqs = set()
     
     # read all files
-    curated_isomiRs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_isomiRs_quantification_v1"
+    curated_isomiRs_quantification_path = "../../data/curated_isomiRs_quantification_v1"
     # Loop through all curated files. For each file, get the list of isomiR_seq
     for file in os.listdir(curated_isomiRs_quantification_path):
         # Read the curated quantification of isomiRs
@@ -147,13 +147,13 @@ def annotate_isomiR():
 
     # Export unique isomiRs to excel with id 
     annotated_isomiRs = pd.DataFrame({"isomiR_ID": range(1, len(isomiR_seqs) + 1), "isomiR_seq": list(isomiR_seqs)})
-    annotated_isomiRs.to_csv(f"/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/annotation_guide/annotated_isomiRs.csv", index=False)
+    annotated_isomiRs.to_csv(f"../../data/annotation_guide/annotated_isomiRs.csv", index=False)
     
 def add_isomiR_ID_to_curated_isomiR_quantification():
     # read annoted isomiRs 
     annotated_isomiRs = pd.read_csv("../../data/annotation_guide/annotated_isomiRs.csv")
     # read all files
-    curated_isomiRs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_isomiRs_quantification_v1"
+    curated_isomiRs_quantification_path = "../../data/curated_isomiRs_quantification_v1"
     # Loop through all curated files. For each file, add isomiR ID
     for file in os.listdir(curated_isomiRs_quantification_path):
         # Curated quantification of isomiRs
@@ -166,7 +166,7 @@ def add_isomiR_ID_to_curated_isomiR_quantification():
 def filter_isomiR_ids_appear_in_n_samples(ratio):
     sample_isomiRs = []
     # read all files
-    curated_isomiRs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_isomiRs_quantification_v2"
+    curated_isomiRs_quantification_path = "../../data/curated_isomiRs_quantification_v2"
     # Loop through all curated files. For each file, get the list of isomiR_seq
     for file in os.listdir(curated_isomiRs_quantification_path):
         # Read the curated quantification of isomiRs
@@ -187,7 +187,7 @@ def set_up_normal_primary_tumour():
     normal_sample_df = sample_df[sample_df['sample_type'] == 'Solid Tissue Normal']
     primary_tumour_sample_df = sample_df[sample_df['sample_type'] == 'Primary Tumor']
     merged = primary_tumour_sample_df.merge(normal_sample_df, how='inner', on='case_submitter_id')
-    curated_isomiRs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_isomiRs_quantification_v3"
+    curated_isomiRs_quantification_path = "../../data/curated_isomiRs_quantification_v3"
 
     # copy each file to folder corresponding to sample type and rename to be case id
     for _, r in merged.iterrows():
@@ -196,13 +196,13 @@ def set_up_normal_primary_tumour():
         # only retain isomiR_ID, read_count and reoroder columns
         primary_df = primary_df[['isomiR_ID', 'read_count']]
         # save to primary folder with new name 
-        primary_df.to_csv(f"/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/deseq2/primary/{r['case_submitter_id']}_primary.csv", index=False, header=False)
+        primary_df.to_csv(f"../../data/deseq2/primary/{r['case_submitter_id']}_primary.csv", index=False, header=False)
         # read normal tissue file
         normal_df = pd.read_csv(f"{curated_isomiRs_quantification_path}/{r['file_name_y']}.csv")
         # only retain isomiR_ID, read_count and reoroder columns
         normal_df = normal_df[['isomiR_ID', 'read_count']]
         # save to normal folder with new name 
-        normal_df.to_csv(f"/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/deseq2/normal/{r['case_submitter_id']}_normal.csv", index=False, header=False)
+        normal_df.to_csv(f"../../data/deseq2/normal/{r['case_submitter_id']}_normal.csv", index=False, header=False)
 
 def populate_all_isomiRs():
     """
@@ -213,7 +213,7 @@ def populate_all_isomiRs():
     # Get all isomiR ids 
     annotated_isomiR_ids = set(annotated_isomiRs['isomiR_ID'])
     # Read all files
-    curated_isomiRs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_isomiRs_quantification_v2"
+    curated_isomiRs_quantification_path = "../../data/curated_isomiRs_quantification_v2"
     # For each curated isomiR file
     for file in os.listdir(curated_isomiRs_quantification_path):
         # Curated quantification of isomiRs
@@ -230,30 +230,30 @@ def populate_all_isomiRs():
         # sort dataframe by isomiR_ID
         curated_isomiRs_df = curated_isomiRs_df.sort_values(by="isomiR_ID", ascending=True)
         # export to v3 
-        curated_isomiRs_df.to_csv(f"/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_isomiRs_quantification_v3/{file}", index=False)
+        curated_isomiRs_df.to_csv(f"../../data/curated_isomiRs_quantification_v3/{file}", index=False)
 
 def filter_de_dominant_isomiRs():
-    de_isomiRs = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/deseq2/summary.tabular", delim_whitespace=True, header=None)
+    de_isomiRs = pd.read_csv("../../data/deseq2/summary.tabular", delim_whitespace=True, header=None)
     de_isomiR_ids = set(de_isomiRs[0])
     dominant_isomiR_ids = filter_isomiR_ids_appear_in_n_samples(0.8)
     de_dominant_isomiR_ids = dominant_isomiR_ids.intersection(de_isomiR_ids)
     #de_dominant_isomiR_ids_df = pd.DataFrame({'isomiR_ID': list(de_dominant_isomiR_ids)})
-    #de_dominant_isomiR_ids_df.to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/annotation_guide/de_dominant_isomiR_ids.csv", index=False)
-    curated_isomiRs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_isomiRs_quantification_v3"
+    #de_dominant_isomiR_ids_df.to_csv("../../data/annotation_guide/de_dominant_isomiR_ids.csv", index=False)
+    curated_isomiRs_quantification_path = "../../data/curated_isomiRs_quantification_v3"
 
     for file in os.listdir(curated_isomiRs_quantification_path):
         # Read the curated quantification of isomiRs
         curated_isomiRs_df = pd.read_csv(f"{curated_isomiRs_quantification_path}/{file}")   
         curated_isomiRs_df = curated_isomiRs_df[curated_isomiRs_df['isomiR_ID'].isin(de_dominant_isomiR_ids)]    
-        curated_isomiRs_df.to_csv(f"/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_isomiRs_quantification_v4/{file}", index=False)
+        curated_isomiRs_df.to_csv(f"../../data/curated_isomiRs_quantification_v4/{file}", index=False)
 
 def create_isomiR_profiles(): 
     # read de isomiR_IDs 
-    de_dominant_isomiRs = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/annotation_guide/de_dominant_isomiR_ids.csv")
+    de_dominant_isomiRs = pd.read_csv("../../data/annotation_guide/de_dominant_isomiR_ids.csv")
     de_dominant_isomiR_ids = list(de_dominant_isomiRs['isomiR_ID'])
     combined_curated_isomiRs = pd.DataFrame(columns = de_dominant_isomiR_ids + ['file_name'])
 
-    curated_isomiRs_quantification_path = "/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/curated_isomiRs_quantification_v4"
+    curated_isomiRs_quantification_path = "../../data/curated_isomiRs_quantification_v4"
 
     for file in os.listdir(curated_isomiRs_quantification_path):
         # Curated quantification of isomiRs
@@ -266,7 +266,7 @@ def create_isomiR_profiles():
         curated_isomiRs_dict['file_name'] = file.replace(".csv", "")
         combined_curated_isomiRs = combined_curated_isomiRs.append(curated_isomiRs_dict, ignore_index=True)
     
-    combined_curated_isomiRs.to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/isomiR_profiles.csv", index=False)
+    combined_curated_isomiRs.to_csv("../../data/ml_inputs/isomiR_profiles.csv", index=False)
 
 def create_ml_input(combined_curated_isomiRs, clinical_sample_df):
     print(combined_curated_isomiRs)
@@ -276,18 +276,18 @@ def create_ml_input(combined_curated_isomiRs, clinical_sample_df):
     # Drop file_name, case_submitter_id columns
     ml_input = ml_input.drop(['file_name', 'case_submitter_id', 'sample_type'], axis = 1)
     # Export to csv
-    ml_input.to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/raw_data.csv", index=False)
+    ml_input.to_csv("../../data/ml_inputs/raw_data.csv", index=False)
 
 def select_feature():
     cox_features = [  
         '4324', '48737', '18723', '40510', '7656', '49997', '42807', '28204', '39080', '47850', '8125', '1278', '38895', '4626', '18133', '5633', '27881', '44026', '38197', '35448', '28564'
     ]
     # get selected rsf features
-    rsf_features = list(pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/selected_features/isomiRs_raw_rsf.csv", sep=' ')['isomiR_ID'])
+    rsf_features = list(pd.read_csv("../../data/selected_features/isomiRs_raw_rsf.csv", sep=' ')['isomiR_ID'])
     rsf_features = [str(id) for id in rsf_features]
 
     # get selected svm features 
-    svm_features = list(pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/selected_features/isomiRs_raw_svm.csv", sep=' ')['isomiR_ID'])
+    svm_features = list(pd.read_csv("../../data/selected_features/isomiRs_raw_svm.csv", sep=' ')['isomiR_ID'])
     svm_features = [str(id) for id in svm_features]
 
     # combine 3 list 
@@ -302,7 +302,7 @@ def select_feature():
     #### Approach 2 #####
     # selected_features = list(set(all_features))
 
-    pd.DataFrame({'feature': selected_features}).to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/selected_features/isomiRs.csv", index=False)
+    pd.DataFrame({'feature': selected_features}).to_csv("../../data/selected_features/isomiRs.csv", index=False)
 
 ## main ##
 # survival_details_df = get_survival_details()
@@ -322,7 +322,7 @@ def select_feature():
 # set_up_normal_primary_tumour()
 # filter_de_dominant_isomiRs()
 # create_isomiR_profiles()
-#combined_curated_isomiRs = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/isomiR_profiles.csv")
+#combined_curated_isomiRs = pd.read_csv("../../data/ml_inputs/isomiR_profiles.csv")
 #create_ml_input(combined_curated_isomiRs, sample_survival_details_df)
 select_feature()
 

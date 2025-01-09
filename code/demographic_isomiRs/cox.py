@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV, StratifiedKFold
 
 # Read data
-raw_df = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/demographic_isomiRs.csv", index_col=False)
+raw_df = pd.read_csv("../../data/ml_inputs/demographic_isomiRs.csv", index_col=False)
 raw_df['survival_in_days'] = raw_df['survival_in_days'].astype(float)
 
 # Preprocess raw data
@@ -39,7 +39,7 @@ for train_index, test_index in cv:
     # Add test score to scores 
     scores.append(estimator.score(X_test_data, y_test_data))
     # export scores to csv 
-    pd.DataFrame({'score': scores}).to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/signed_ranks_test/demographic_isomiRs/cox.csv", index=False)
+    pd.DataFrame({'score': scores}).to_csv("../../data/signed_ranks_test/demographic_isomiRs/cox.csv", index=False)
 
 
 # Choose penalty strength alpha

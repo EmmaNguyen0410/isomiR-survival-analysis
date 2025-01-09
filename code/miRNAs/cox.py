@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read data
-raw_df = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/raw_data2.csv", index_col=False)
+raw_df = pd.read_csv("../../data/ml_inputs/raw_data2.csv", index_col=False)
 raw_df = raw_df[raw_df['survival_in_days'] != "'--"]
 raw_df['survival_in_days'] = raw_df['survival_in_days'].astype(float)
 

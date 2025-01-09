@@ -55,7 +55,7 @@ def get_clinical_details():
         clinical_df[col] = clinical_df[col].apply(lambda r: frequent_value if r == "'--" or r == "not reported" else r)
 
     # Export demographic data to csv
-    clinical_df.to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/demographic_only_profiles.csv", index=False)
+    clinical_df.to_csv("../../data/ml_inputs/demographic_only_profiles.csv", index=False)
 
 def set_survival(row, max_days_to_last_follow_up):
     """
@@ -73,7 +73,7 @@ def set_survival(row, max_days_to_last_follow_up):
         return pd.Series([True, row['days_to_last_follow_up']])
 
 def encode_categorical_features():
-    clinical_df = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/demographic_only_profiles.csv")
+    clinical_df = pd.read_csv("../../data/ml_inputs/demographic_only_profiles.csv")
     # gender, race, prior_malignancy: onehot 
     clinical_df = pd.get_dummies(clinical_df, columns=['gender', 'race', 'prior_malignancy', 'site_of_resection_or_biopsy', 'tissue_or_organ_of_origin'])
     # ajcc_clinical_m: ordinal
@@ -91,7 +91,7 @@ def encode_categorical_features():
     # ajcc_pathologic_t: ordinal
     clinical_df['ajcc_pathologic_t'] = OrdinalEncoder(categories=[['TX', 'T0', 'T1', 'T2', 'T3', 'T4', 'T4a', 'T4b']]).fit_transform(clinical_df[['ajcc_pathologic_t']])
     print(clinical_df)
-    clinical_df.to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/raw_data3.csv", index=False)
+    clinical_df.to_csv("../../data/ml_inputs/raw_data3.csv", index=False)
 
 def select_feature():
     cox_features = [  
@@ -170,11 +170,11 @@ def select_feature():
     # selected_features = list(set(all_features))
 
     #### Approach 3 ####
-    demographic_profile = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/raw_data3.csv")
+    demographic_profile = pd.read_csv("../../data/ml_inputs/raw_data3.csv")
     demographic_profile = demographic_profile.drop(['status', 'survival_in_days'], axis=1)
     selected_features = list(demographic_profile.columns)
 
-    pd.DataFrame({'feature': selected_features}).to_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/selected_features/demographic.csv", index=False)
+    pd.DataFrame({'feature': selected_features}).to_csv("../../data/selected_features/demographic.csv", index=False)
 
 ###### main ######
 get_clinical_details()

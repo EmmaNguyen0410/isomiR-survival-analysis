@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read data
-raw_df = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/raw_data.csv", index_col=False)
+raw_df = pd.read_csv("../../data/ml_inputs/raw_data.csv", index_col=False)
 raw_df = raw_df[raw_df['survival_in_days'] != "'--"]
 raw_df['survival_in_days'] = raw_df['survival_in_days'].astype(float)
 
@@ -79,5 +79,3 @@ coxnet_pred.set_params(**gcv.best_params_)
 coxnet_pred.fit(X_train, structured_y_train)
 print(coxnet_pred.score(X_train, structured_y_train)) # 0.6810820716036374
 print(coxnet_pred.score(X_test, structured_y_test)) # 0.6086816720257234
-
-# https://github.com/sebp/scikit-survival/issues/41

@@ -7,9 +7,9 @@ from sksurv.compare import compare_survival
 from scipy import stats
 
 # Get list of selected isomiRs
-selected_isomiRs = list(pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/selected_features/isomiRs.csv")['feature'])
+selected_isomiRs = list(pd.read_csv("../../data/selected_features/isomiRs.csv")['feature'])
 # read isomiR_profile 
-isomiR_profiles = pd.read_csv("/Users/nguyenthao/Desktop/UTS/TranLab/research_project/data/ml_inputs/raw_data.csv")
+isomiR_profiles = pd.read_csv("../../data/ml_inputs/raw_data.csv")
 isomiR_profiles = isomiR_profiles[isomiR_profiles['survival_in_days'] != "'--"]
 
 def set_expression_level(row, upper, lower):
