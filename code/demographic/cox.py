@@ -104,5 +104,3 @@ coxnet_pred.set_params(**gcv.best_params_)
 coxnet_pred.fit(X_train, structured_y_train)
 print("Train: ", coxnet_pred.score(X_train, structured_y_train)) # 0.6251982575672959
 print("Test: ", coxnet_pred.score(X_test, structured_y_test)) # 0.6028820375335121
-
-# https://github.com/sebp/scikit-survival/issues/41
