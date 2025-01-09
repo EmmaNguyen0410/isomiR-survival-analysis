@@ -36,6 +36,10 @@ To compare the prognostic values of isomiRs and miRNAs, three types of feature s
 
 C-index was used as a metric evaluate the performance of survival models. Significance of performance improvement of the clinical & miRNAs or clinical & isomiRs models over the clinical only model was assessed based on signed rank tests of their C-index scores on six train/test splits.
 
+## Result
 
+There is no strong evidence that survival models using combination of clinical and genetic factors are better than those using clinical factors only. Furthermore, there is no conclusive proof that isomiRs are more effective than miRNAs in improving the performance of these survival models when used in conjunction with clinical data (Table II).
+
+![raw data](./img/figure1.png)
 
 
