@@ -1,0 +1,4 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+13b33606-0f57-57d3-a910-604bb309f5f7	1265	case	4bfbce2b-9d0b-4e8a-950f-fd8e0ba3e05a	Prior malignancy	Notification	2011-02-05T00:00:00	Approved	[intgen.org]: Prior Malignancy
+6366c10f-603a-53f3-a367-89d9aa56528e	12028	case	4bfbce2b-9d0b-4e8a-950f-fd8e0ba3e05a	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy  of tongue cancer treated with cisplatin and locoregional radiation. Tumor submitted to TCGA possibly recurrence of Prior malignancy .
+96c95d93-3dcf-5338-8963-a74a42b36aec	10846	case	4bfbce2b-9d0b-4e8a-950f-fd8e0ba3e05a	Case submitted is found to be a recurrence after submission	Notification	2012-09-06T00:00:00	Approved	Per 6-12-2012 audit, case submitted is most likely a recurrence.

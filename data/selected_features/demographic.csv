@@ -1,0 +1,65 @@
+feature
+age_at_index
+ajcc_clinical_m
+ajcc_clinical_n
+ajcc_clinical_stage
+ajcc_clinical_t
+ajcc_pathologic_n
+ajcc_pathologic_stage
+ajcc_pathologic_t
+gender_female
+gender_male
+race_american indian or alaska native
+race_asian
+race_black or african american
+race_white
+prior_malignancy_no
+prior_malignancy_yes
+site_of_resection_or_biopsy_Anterior floor of mouth
+"site_of_resection_or_biopsy_Base of tongue, NOS"
+site_of_resection_or_biopsy_Border of tongue
+site_of_resection_or_biopsy_Cheek mucosa
+"site_of_resection_or_biopsy_Floor of mouth, NOS"
+"site_of_resection_or_biopsy_Gum, NOS"
+site_of_resection_or_biopsy_Hard palate
+"site_of_resection_or_biopsy_Hypopharynx, NOS"
+"site_of_resection_or_biopsy_Larynx, NOS"
+"site_of_resection_or_biopsy_Lip, NOS"
+site_of_resection_or_biopsy_Lower gum
+site_of_resection_or_biopsy_Mandible
+"site_of_resection_or_biopsy_Mouth, NOS"
+"site_of_resection_or_biopsy_Oropharynx, NOS"
+"site_of_resection_or_biopsy_Overlapping lesion of lip, oral cavity and pharynx"
+"site_of_resection_or_biopsy_Palate, NOS"
+"site_of_resection_or_biopsy_Pharynx, NOS"
+site_of_resection_or_biopsy_Posterior wall of oropharynx
+site_of_resection_or_biopsy_Retromolar area
+site_of_resection_or_biopsy_Supraglottis
+"site_of_resection_or_biopsy_Tongue, NOS"
+"site_of_resection_or_biopsy_Tonsil, NOS"
+site_of_resection_or_biopsy_Upper gum
+"site_of_resection_or_biopsy_Ventral surface of tongue, NOS"
+tissue_or_organ_of_origin_Anterior floor of mouth
+"tissue_or_organ_of_origin_Base of tongue, NOS"
+tissue_or_organ_of_origin_Border of tongue
+tissue_or_organ_of_origin_Cheek mucosa
+"tissue_or_organ_of_origin_Floor of mouth, NOS"
+"tissue_or_organ_of_origin_Gum, NOS"
+tissue_or_organ_of_origin_Hard palate
+"tissue_or_organ_of_origin_Hypopharynx, NOS"
+"tissue_or_organ_of_origin_Larynx, NOS"
+"tissue_or_organ_of_origin_Lip, NOS"
+tissue_or_organ_of_origin_Lower gum
+tissue_or_organ_of_origin_Mandible
+"tissue_or_organ_of_origin_Mouth, NOS"
+"tissue_or_organ_of_origin_Oropharynx, NOS"
+"tissue_or_organ_of_origin_Overlapping lesion of lip, oral cavity and pharynx"
+"tissue_or_organ_of_origin_Palate, NOS"
+"tissue_or_organ_of_origin_Pharynx, NOS"
+tissue_or_organ_of_origin_Posterior wall of oropharynx
+tissue_or_organ_of_origin_Retromolar area
+tissue_or_organ_of_origin_Supraglottis
+"tissue_or_organ_of_origin_Tongue, NOS"
+"tissue_or_organ_of_origin_Tonsil, NOS"
+tissue_or_organ_of_origin_Upper Gum
+"tissue_or_organ_of_origin_Ventral surface of tongue, NOS"

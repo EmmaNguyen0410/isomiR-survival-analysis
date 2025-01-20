@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+acc54eec-0c0d-57ea-8f0f-0fbf6acf7796	11877	case	b843df7e-db06-4d29-b00d-6a93effd9191	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy cancer of the vulva. No systemic chemotherapy or radiation.

@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+137ed5ca-5eba-509b-80fa-7c5f00e11b27	15987	case	134223bd-5c03-4854-a034-ebd2c527833e	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2013-04-25T00:00:00	Approved	Patient had a prior prostate cancer that was treated with systemic chemotherapy. No radiation.

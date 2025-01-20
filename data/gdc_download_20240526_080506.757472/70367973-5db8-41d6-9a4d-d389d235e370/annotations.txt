@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+0cdd0aac-6896-59e4-b040-c05d5dca2d5a	3168	case	e95e9e7d-a1ed-46eb-9cf8-1d355bf0577f	Neoadjuvant therapy	Notification	2011-07-11T00:00:00	Approved	[intgen.org]: Subject Positive for Neo-Adjuvant Therapy
+a1ba8bc2-a129-5e73-9f88-450307440d78	11844	case	e95e9e7d-a1ed-46eb-9cf8-1d355bf0577f	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy cancer of the penis. No systemic chemotherapy or radiation.

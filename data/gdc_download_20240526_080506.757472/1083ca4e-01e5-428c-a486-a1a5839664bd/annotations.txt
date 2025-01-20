@@ -1,0 +1,2 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+5862294a-ac0a-5554-a9fe-61b8d9c86b76	11880	case	d8a6383e-3320-4d2c-9017-31e8e1e8f120	Item does not meet study protocol	Notification	2012-10-31T00:00:00	Approved	An amended pathology report was submitted after case qualified and was shipped with a diagnosis change from squamous cell carcinoma to mucoepidermoid carcinoma.

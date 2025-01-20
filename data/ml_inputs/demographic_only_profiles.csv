@@ -1,0 +1,524 @@
+case_submitter_id,age_at_index,gender,race,ajcc_clinical_m,ajcc_clinical_n,ajcc_clinical_stage,ajcc_clinical_t,ajcc_pathologic_n,ajcc_pathologic_stage,ajcc_pathologic_t,prior_malignancy,site_of_resection_or_biopsy,tissue_or_organ_of_origin,status,survival_in_days
+TCGA-BA-5152,56,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1288.0
+TCGA-CQ-5329,46,female,white,M0,N1,Stage III,T3,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,2143.0
+TCGA-BB-A5HY,64,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Hypopharynx, NOS","Hypopharynx, NOS",True,321
+TCGA-CN-6998,53,male,white,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,357
+TCGA-CR-7392,67,female,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",False,1425.0
+TCGA-CN-A6V1,59,male,white,M0,N2b,Stage IVA,T2,N2a,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",False,603.0
+TCGA-CN-5361,80,male,white,M0,NX,Stage IVA,TX,N2a,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,2120
+TCGA-BB-4223,48,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",False,3221.0
+TCGA-CV-7090,39,male,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,5252.0
+TCGA-CQ-7069,77,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Mouth, NOS","Mouth, NOS",False,1274.0
+TCGA-CV-A6JY,69,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Mouth, NOS","Mouth, NOS",False,646.0
+TCGA-MZ-A7D7,51,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Base of tongue, NOS","Base of tongue, NOS",False,547.0
+TCGA-CQ-5333,74,male,white,M0,N0,Stage I,T1,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",True,341
+TCGA-CV-7410,61,male,white,M0,N0,Stage II,T2,N1,Stage III,T2,no,"Larynx, NOS","Larynx, NOS",True,6417
+TCGA-CV-7250,64,male,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,2900
+TCGA-CV-6935,67,male,white,M0,N0,Stage III,T3,N2c,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",True,295
+TCGA-CV-7438,87,female,white,M0,N0,Stage II,T2,NX,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",True,194
+TCGA-CV-A6JM,85,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Pharynx, NOS","Pharynx, NOS",True,194
+TCGA-CR-6472,59,male,white,M0,N3,Stage IVB,T2,N0,Stage IVA,T4a,yes,"Base of tongue, NOS","Base of tongue, NOS",False,1050.0
+TCGA-QK-AA3K,60,male,black or african american,MX,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",False,253.0
+TCGA-UF-A7JH,59,male,black or african american,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,896.0
+TCGA-F7-A61V,54,male,white,MX,NX,Stage IVA,TX,N0,Stage II,T2,no,"Base of tongue, NOS","Base of tongue, NOS",False,759.0
+TCGA-CQ-6219,50,female,white,M0,N2b,Stage IVA,T3,N2a,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,479
+TCGA-CV-5966,63,female,white,M0,N1,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,545
+TCGA-BA-A6DJ,62,male,asian,M0,N2b,Stage IVA,T4,N2c,Stage IVA,T4a,no,"Gum, NOS","Gum, NOS",True,407
+TCGA-DQ-7596,48,male,white,M0,N2a,Stage IVA,T2,N0,Stage IVA,T4a,no,"Tonsil, NOS","Tonsil, NOS",False,1265.0
+TCGA-CR-7393,26,male,white,M0,N0,Stage I,T1,N1,Stage III,T1,no,"Tongue, NOS","Tongue, NOS",False,993.0
+TCGA-HD-7831,74,male,white,M0,N0,Stage III,T3,N2,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,667.0
+TCGA-CN-4736,70,female,white,M0,N0,Stage II,T2,NX,Stage IVA,T1,no,"Tongue, NOS","Tongue, NOS",True,395
+TCGA-CV-A6JN,53,male,white,M0,N0,Stage II,T2,N0,Stage IVA,T4a,no,"Mouth, NOS","Mouth, NOS",False,906.0
+TCGA-DQ-5631,52,male,white,M0,N2b,Stage IVA,T3,NX,Stage IVA,TX,no,"Tongue, NOS","Tongue, NOS",True,548
+TCGA-CV-5440,52,male,white,M0,N2b,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,3270.0
+TCGA-HD-7754,69,male,white,M0,N2b,Stage IVA,T2,N2b,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",False,783.0
+TCGA-BA-A6DE,70,female,white,M0,N0,Stage III,T3,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,440.0
+TCGA-UF-A71E,63,male,white,M0,N0,Stage IVA,T4,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,1504
+TCGA-MT-A67D,55,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,Anterior floor of mouth,Anterior floor of mouth,False,56.0
+TCGA-CN-4727,56,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,yes,"Larynx, NOS","Larynx, NOS",False,1560.0
+TCGA-UF-A7JV,62,female,white,M0,N2c,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Hypopharynx, NOS","Hypopharynx, NOS",True,90
+TCGA-UF-A7JT,72,female,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,993
+TCGA-CQ-A4C7,88,male,white,M0,N0,Stage II,T2,N1,Stage III,T3,yes,"Floor of mouth, NOS","Floor of mouth, NOS",True,353
+TCGA-P3-A6T3,49,male,white,M0,N1,Stage IVA,T4,N2,Stage IVA,T3,no,"Mouth, NOS","Mouth, NOS",True,577
+TCGA-CN-5364,55,male,white,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,493
+TCGA-CV-5971,60,male,white,M0,N2b,Stage IVA,T2,N2a,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",False,701.0
+TCGA-CV-6945,41,male,white,M0,N2b,Stage IVA,T4a,N2,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,366
+TCGA-F7-A50J,67,female,white,M0,N0,Stage IVA,T4a,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",False,947.0
+TCGA-CQ-A4CD,69,male,white,M0,N0,Stage IVB,T4b,N0,Stage IVA,T4a,no,Mandible,Mandible,False,1022.0
+TCGA-CR-7383,79,female,white,M0,N0,Stage I,T1,N0,Stage I,T1,no,"Tonsil, NOS","Tonsil, NOS",True,521
+TCGA-BB-7866,40,male,white,M0,N1,Stage III,T3,NX,Stage IVA,TX,no,"Tonsil, NOS","Tonsil, NOS",False,1368.0
+TCGA-CN-6997,66,male,white,M0,N2,Stage IVA,T4a,N2c,Stage IVA,T3,yes,"Larynx, NOS","Larynx, NOS",True,988
+TCGA-BA-A6DA,41,female,white,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,Supraglottis,Supraglottis,False,351.0
+TCGA-BA-5559,71,male,white,M0,N2b,Stage IVA,T3,NX,Stage IVA,TX,yes,"Tonsil, NOS","Tonsil, NOS",True,2083
+TCGA-CV-5443,63,male,black or african american,M0,N1,Stage III,T3,N0,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",False,2784.0
+TCGA-CX-A4AQ,56,male,white,M0,N2a,Stage IVA,T1,N2b,Stage IVA,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,1555.0
+TCGA-D6-A6EQ,57,male,white,M0,N1,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,368.0
+TCGA-BB-7861,56,male,white,M0,N1,Stage III,TX,N1,Stage III,T1,no,"Base of tongue, NOS","Base of tongue, NOS",False,682.0
+TCGA-UF-A7JS,59,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,680
+TCGA-CQ-5334,87,male,white,M0,N2b,Stage IVB,T4b,N2b,Stage IVA,T3,no,Cheek mucosa,Cheek mucosa,True,129
+TCGA-CV-A45P,82,female,white,M0,N0,Stage II,T2,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,639.0
+TCGA-CV-A468,42,male,white,M0,N2b,Stage III,T3,N2a,Stage IVA,T4a,no,"Lip, NOS","Lip, NOS",True,464
+TCGA-CR-7367,52,male,white,M0,N3,Stage IVB,T4a,N1,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1440.0
+TCGA-UF-A7JK,59,male,white,M0,N0,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,424
+TCGA-CV-7103,49,male,white,M0,N0,Stage II,T2,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",True,1591
+TCGA-CV-5979,26,male,white,M0,N1,Stage III,T3,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,1315.0
+TCGA-CV-5970,59,male,white,M0,N2b,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,406
+TCGA-CN-4737,19,male,white,M0,N0,Stage II,T2,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,625.0
+TCGA-BA-A6DB,24,female,white,M0,N0,Stage II,T2,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,216.0
+TCGA-CV-7418,62,male,black or african american,M0,N0,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,789
+TCGA-CQ-7065,40,male,asian,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,1628.0
+TCGA-UF-A718,62,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1971.0
+TCGA-P3-A6SX,67,male,white,M0,N0,Stage IVA,T4,N1,Stage III,T2,no,"Tonsil, NOS","Tonsil, NOS",True,1430
+TCGA-CN-A63U,50,male,white,M0,N0,Stage III,T3,N2b,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",False,964.0
+TCGA-HD-8634,51,female,white,M0,NX,Stage I,T1,N0,Stage I,T1,yes,"Tongue, NOS","Tongue, NOS",True,385
+TCGA-QK-A6IF,61,male,white,M0,N2b,Stage IVA,T1,N0,Stage IVA,T4a,no,"Tonsil, NOS","Tonsil, NOS",False,704.0
+TCGA-CV-5976,50,male,white,M0,N1,Stage III,T3,N2b,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",False,1478.0
+TCGA-CN-6017,55,male,white,M0,N1,Stage III,T2,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,853
+TCGA-CV-7101,80,male,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Larynx, NOS","Larynx, NOS",True,160
+TCGA-CR-7373,66,male,white,M0,N2b,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,889.0
+TCGA-BB-4217,68,male,black or african american,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,187.0
+TCGA-CV-7252,62,female,black or african american,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,151
+TCGA-CQ-A4CI,73,male,white,MX,NX,Stage IVA,TX,N1,Stage III,T2,no,Cheek mucosa,Cheek mucosa,False,950.0
+TCGA-KU-A66T,53,female,white,M0,N0,Stage IVA,T4,N0,Stage IVA,T4,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,552.0
+TCGA-CV-A464,48,male,white,M0,N0,Stage IVA,T4a,N0,Stage III,T3,no,Cheek mucosa,Cheek mucosa,False,1722.0
+TCGA-CN-4741,75,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Gum, NOS","Gum, NOS",False,2239.0
+TCGA-CR-7368,54,male,white,M0,N0,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1245.0
+TCGA-BA-A4II,46,male,white,M0,N0,Stage I,T1,N0,Stage II,T2,no,"Oropharynx, NOS","Oropharynx, NOS",False,918.0
+TCGA-BA-A4IF,59,male,white,M0,N0,Stage IVA,T4,NX,Stage IVA,TX,no,Posterior wall of oropharynx,Posterior wall of oropharynx,False,895.0
+TCGA-QK-A64Z,79,female,white,M0,N0,Stage II,T2,NX,Stage IVA,T4,no,Hard palate,Hard palate,True,641
+TCGA-CN-5363,48,male,black or african american,M0,N3,Stage IVB,T4a,N3,Stage IVB,T4a,no,"Larynx, NOS","Larynx, NOS",True,253
+TCGA-CV-7091,54,male,white,M0,N0,Stage I,T1,N0,Stage I,T1,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,3381.0
+TCGA-CV-6933,53,male,white,M0,N0,Stage IVA,T4a,N1,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",True,2741
+TCGA-CX-7085,77,female,white,M0,N0,Stage III,T3,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,321.0
+TCGA-CQ-7063,59,female,white,M0,N0,Stage IVA,T4a,NX,Stage I,T1,yes,"Mouth, NOS","Mouth, NOS",False,2133.0
+TCGA-CV-6942,73,female,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,4282.0
+TCGA-CV-7406,49,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Base of tongue, NOS","Base of tongue, NOS",True,1748
+TCGA-UF-A71A,67,male,white,M0,N2a,Stage IVA,T3,N2c,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,86
+TCGA-QK-A8Z7,59,male,black or african american,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,392.0
+TCGA-IQ-A61K,70,female,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,161
+TCGA-CV-6960,49,male,black or african american,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,862
+TCGA-CV-A45W,75,male,white,M0,N0,Stage III,T3,N0,Stage II,T2,no,"Larynx, NOS","Larynx, NOS",True,1398
+TCGA-CV-7422,60,female,white,M0,N1,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,1037
+TCGA-CV-7235,67,male,white,M0,N0,Stage III,T3,N0,Stage II,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,2347.0
+TCGA-CN-6024,66,male,white,M0,N2,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,337
+TCGA-CN-4729,73,male,white,M0,N0,Stage IVA,T4a,N1,Stage III,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,392.0
+TCGA-CN-5366,51,male,white,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Hypopharynx, NOS","Hypopharynx, NOS",True,360
+TCGA-CV-A45X,47,male,white,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,198
+TCGA-BB-7863,43,female,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",False,1025.0
+TCGA-D6-6826,64,female,white,M0,N2,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,348
+TCGA-HD-7832,52,male,white,M0,N2,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,836.0
+TCGA-QK-A6IG,69,male,white,M0,N0,Stage II,T2,N1,Stage III,T2,no,Cheek mucosa,Cheek mucosa,True,222
+TCGA-CV-6950,64,male,white,M0,N2c,Stage IVA,T3,N2c,Stage IVA,T3,no,"Base of tongue, NOS","Base of tongue, NOS",True,459
+TCGA-UF-A71D,54,female,white,M0,N1,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1461.0
+TCGA-CN-6022,49,male,white,M0,N1,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,281
+TCGA-CV-7248,63,female,black or african american,M0,N2b,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,521
+TCGA-CN-A498,61,female,white,M0,N0,Stage II,T2,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",True,773
+TCGA-CN-4730,62,male,white,M0,N2b,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,817.0
+TCGA-BB-8601,84,male,black or african american,M0,N0,Stage II,T2,N1,Stage III,T3,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,624.0
+TCGA-D6-A6EP,62,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Hypopharynx, NOS","Hypopharynx, NOS",False,424.0
+TCGA-MT-A51X,30,male,white,M0,N2b,Stage IVA,T1,N2b,Stage IVA,T1,no,"Tongue, NOS","Tongue, NOS",False,242.0
+TCGA-P3-A5QE,49,male,white,M0,N1,Stage III,T1,N1,Stage III,T2,no,"Base of tongue, NOS","Base of tongue, NOS",False,1559.0
+TCGA-CV-7236,77,female,white,M0,N2c,Stage IVA,T2,N2c,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,144
+TCGA-CN-6995,78,male,white,M0,N1,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,112
+TCGA-P3-A6SW,50,male,white,M0,N2b,Stage IVA,T4,N3,Stage IVB,T3,no,"Tonsil, NOS","Tonsil, NOS",False,1120.0
+TCGA-P3-A5Q5,54,male,white,M0,N2,Stage IVA,TX,N2,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",False,910.0
+TCGA-QK-A6II,52,male,white,M0,N0,Stage III,T3,N2c,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,284
+TCGA-UF-A7JF,80,male,white,M0,N2b,Stage IVA,T4a,N2a,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1686.0
+TCGA-CN-4725,60,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,1157.0
+TCGA-D6-6827,55,female,white,M0,N1,Stage III,T1,N0,Stage I,T1,no,"Lip, NOS","Lip, NOS",False,568.0
+TCGA-CV-5442,76,female,white,M0,N2b,Stage IVA,T4a,N2b,Stage IVA,T4a,no,Hard palate,Hard palate,False,2327.0
+TCGA-CX-7219,47,male,black or african american,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,yes,"Floor of mouth, NOS","Floor of mouth, NOS",False,1045.0
+TCGA-CV-A461,65,male,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,2064
+TCGA-QK-A8ZB,68,male,black or african american,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,542.0
+TCGA-QK-A6VC,62,female,black or african american,M0,N2c,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Hypopharynx, NOS","Hypopharynx, NOS",False,600.0
+TCGA-BA-6872,47,male,white,M0,N2c,Stage IVA,T3,NX,Stage IVA,TX,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,384
+TCGA-CV-5439,62,male,white,M0,N0,Stage II,T2,N2b,Stage IVA,T3,no,"Base of tongue, NOS","Base of tongue, NOS",True,546
+TCGA-DQ-7591,62,male,white,M0,N2b,Stage IVA,T4a,NX,Stage IVA,TX,no,"Base of tongue, NOS","Base of tongue, NOS",False,622.0
+TCGA-CR-7386,69,male,white,M0,N1,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1430.0
+TCGA-CV-A6K1,65,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,685.0
+TCGA-CV-6954,59,male,black or african american,M0,N1,Stage IVA,T4a,NX,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,2002
+TCGA-CV-6961,61,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",True,76
+TCGA-CQ-5325,65,male,white,M0,N0,Stage I,T1,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",True,654
+TCGA-CV-6003,50,female,white,M0,N0,Stage II,T2,N1,Stage III,T2,no,"Tongue, NOS","Tongue, NOS",False,1665.0
+TCGA-WA-A7H4,69,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,443.0
+TCGA-CN-6988,47,male,white,M0,N2b,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,318.0
+TCGA-D6-6825,73,male,white,M0,N0,Stage III,T3,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,491.0
+TCGA-D6-A6EO,44,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,759.0
+TCGA-CV-A6JD,82,female,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,182
+TCGA-HD-8224,63,male,white,M0,N0,Stage III,T3,N2c,Stage IVA,T3,no,"Base of tongue, NOS","Base of tongue, NOS",True,446
+TCGA-CN-4742,48,female,white,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,397
+TCGA-CV-7429,55,male,white,M0,N0,Stage III,T3,N2b,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,107
+TCGA-P3-A5Q6,49,male,white,M0,N0,Stage III,T3,N2b,Stage IVA,T4a,no,"Tonsil, NOS","Tonsil, NOS",True,480
+TCGA-P3-A5QF,49,male,white,M0,N2b,Stage IVA,T4,N2b,Stage IVA,T4,no,Upper gum,Upper Gum,True,330
+TCGA-CN-5355,64,male,black or african american,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1278.0
+TCGA-CR-7372,45,male,white,M0,N0,Stage II,T2,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,759.0
+TCGA-DQ-7589,70,male,white,M1,N2c,Stage IVC,T2,NX,Stage IVA,TX,yes,"Larynx, NOS","Larynx, NOS",False,1409.0
+TCGA-P3-A6T5,79,female,white,M0,N0,Stage IVA,T4,N0,Stage IVA,T4a,no,Lower gum,Lower gum,True,882
+TCGA-CR-6478,66,female,white,M0,N2c,Stage IVA,T3,N0,Stage IVA,T4a,yes,"Tonsil, NOS","Tonsil, NOS",True,183
+TCGA-CV-A45Y,61,male,american indian or alaska native,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,2703
+TCGA-CR-6482,62,male,black or african american,M0,N2b,Stage IVA,T2,N0,Stage IVA,T4a,no,"Tonsil, NOS","Tonsil, NOS",False,345.0
+TCGA-F7-A624,73,male,white,MX,NX,Stage IVA,TX,NX,Stage II,T2,no,Cheek mucosa,Cheek mucosa,False,378.0
+TCGA-CX-7082,82,male,white,M0,N0,Stage II,T2,N2b,Stage IVA,T2,yes,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,11
+TCGA-CV-7089,74,male,white,M0,N2,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,1972
+TCGA-CN-6996,58,female,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,530
+TCGA-QK-A652,60,male,white,M0,N0,Stage II,T2,N1,Stage III,T1,no,"Tongue, NOS","Tongue, NOS",False,645.0
+TCGA-CV-7242,60,female,white,M0,N0,Stage III,T3,N0,Stage II,T2,no,"Larynx, NOS","Larynx, NOS",False,1095.0
+TCGA-TN-A7HL,59,male,white,M0,NX,Stage IVA,T4a,N2b,Stage IVA,T3,no,"Hypopharynx, NOS","Hypopharynx, NOS",False,619.0
+TCGA-BA-4077,45,female,white,M0,N3,Stage IVB,T4b,N0,Stage IVA,T4a,yes,"Tongue, NOS","Tongue, NOS",True,1134
+TCGA-CV-A6JZ,68,male,white,M0,N0,Stage IVA,T4a,N0,Stage II,T2,no,"Mouth, NOS","Mouth, NOS",False,714.0
+TCGA-CN-5365,38,male,white,M1,N2,Stage IVC,T1,N3,Stage IVB,T2,no,"Tonsil, NOS","Tonsil, NOS",True,351
+TCGA-CV-5444,64,male,black or african american,M0,N0,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,2437.0
+TCGA-CV-6934,66,female,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,65
+TCGA-CV-5977,66,male,white,M0,N1,Stage III,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",False,1840.0
+TCGA-CN-4731,63,female,white,M0,N2,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,998
+TCGA-MT-A67F,60,female,white,MX,N0,Stage IVA,T4,N0,Stage IVA,T4,no,"Mouth, NOS","Mouth, NOS",False,384.0
+TCGA-CR-7388,70,female,white,M0,N2,Stage IVA,T2,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",True,823
+TCGA-F7-8489,48,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,658.0
+TCGA-CV-7255,32,female,white,M0,N0,Stage II,T2,N0,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,64
+TCGA-CR-7380,58,male,white,M0,N0,Stage III,T3,N0,Stage IVB,T4b,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,606
+TCGA-DQ-5625,52,female,white,M0,N0,Stage II,T2,NX,Stage IVA,TX,no,"Tongue, NOS","Tongue, NOS",True,1133
+TCGA-CR-7389,55,male,black or african american,M0,N1,Stage III,T2,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",False,392.0
+TCGA-RS-A6TP,58,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tonsil, NOS","Tonsil, NOS",False,516.0
+TCGA-UF-A7JC,42,male,white,M0,N1,Stage III,T3,N2b,Stage IVA,T3,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,546
+TCGA-CN-5373,55,female,white,M0,N0,Stage II,T2,N0,Stage I,T1,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,1584.0
+TCGA-CN-6992,61,male,white,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T3,yes,"Larynx, NOS","Larynx, NOS",False,1066.0
+TCGA-BA-A4IG,77,male,white,M0,N2,Stage IVA,T2,NX,Stage IVA,T1,yes,"Oropharynx, NOS","Oropharynx, NOS",False,855.0
+TCGA-CN-5370,78,male,white,M0,N0,Stage II,T2,N1,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",True,259
+TCGA-CN-6018,85,female,white,M0,N2c,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,580
+TCGA-D6-A4Z9,59,male,white,M0,N2,Stage IVA,T2,N2,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,539.0
+TCGA-UF-A7JO,79,female,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,631
+TCGA-CV-7261,57,male,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1512.0
+TCGA-BB-8596,69,female,white,M0,N1,Stage IVA,T4,NX,Stage IVA,T4a,no,"Hypopharynx, NOS","Hypopharynx, NOS",False,2161.0
+TCGA-CV-7099,85,female,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,243
+TCGA-IQ-A6SH,55,male,black or african american,M1,N1,Stage IVC,T2,N1,Stage III,T2,no,"Tongue, NOS","Tongue, NOS",False,471.0
+TCGA-CN-5360,68,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,2169.0
+TCGA-BB-4224,52,male,white,M0,N0,Stage III,T3,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,278.0
+TCGA-CV-6441,60,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",True,292
+TCGA-H7-A76A,57,male,white,M0,N2b,Stage IVA,T2,N2b,Stage IVA,TX,no,"Tonsil, NOS","Tonsil, NOS",False,637.0
+TCGA-CQ-5327,61,female,asian,M0,N2c,Stage IVA,T3,N2c,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",False,1660.0
+TCGA-CV-7102,76,female,white,M0,N1,Stage III,T3,N2,Stage IVA,T3,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,56
+TCGA-CN-A6V6,59,male,white,M0,N2b,Stage IVA,T2,N2b,Stage IVA,T2,no,"Base of tongue, NOS","Base of tongue, NOS",False,635.0
+TCGA-HD-7229,60,male,white,M0,NX,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1027.0
+TCGA-CQ-6227,77,male,white,M0,N1,Stage III,T3,N2c,Stage IVA,T3,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,129
+TCGA-CN-A63W,48,female,white,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,377
+TCGA-CQ-A4C6,63,male,asian,M0,N0,Stage II,T2,N0,Stage II,T2,no,Cheek mucosa,Cheek mucosa,False,1353.0
+TCGA-CN-4726,68,male,white,M0,N2,Stage IVA,T3,N2b,Stage IVA,T3,no,Cheek mucosa,Cheek mucosa,True,142
+TCGA-CV-7247,55,male,white,M0,N0,Stage II,T2,N0,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",True,577
+TCGA-KU-A66S,69,female,white,MX,N1,Stage III,T2,N1,Stage III,T1,no,"Larynx, NOS","Larynx, NOS",True,406
+TCGA-D6-8568,62,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Larynx, NOS","Larynx, NOS",False,759.0
+TCGA-CR-6491,60,male,black or african american,M0,NX,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,693.0
+TCGA-CN-A49A,60,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVB,T4b,no,"Palate, NOS","Palate, NOS",True,526
+TCGA-CN-A641,47,male,white,M0,N2c,Stage IVA,T4,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,367.0
+TCGA-CV-7411,64,female,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,2717
+TCGA-IQ-7632,68,female,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,441.0
+TCGA-CN-A6UY,57,male,white,M0,N2a,Stage IVA,T3,N2b,Stage IVA,T3,no,"Base of tongue, NOS","Base of tongue, NOS",False,713.0
+TCGA-CN-A63Y,46,male,white,M0,N0,Stage I,T1,N0,Stage II,T2,no,"Tonsil, NOS","Tonsil, NOS",False,504.0
+TCGA-CN-5367,60,female,white,M0,N0,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,352
+TCGA-CR-7364,66,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",False,1435.0
+TCGA-DQ-7594,47,male,white,M0,N3,Stage IVB,T4a,NX,Stage IVA,TX,no,"Base of tongue, NOS","Base of tongue, NOS",False,1218.0
+TCGA-CV-7434,64,male,white,M0,N0,Stage III,T3,N1,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,218
+TCGA-QK-A6VB,66,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,641.0
+TCGA-D6-6824,61,male,white,M0,N1,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,77.0
+TCGA-CQ-6218,52,female,white,M0,N0,Stage III,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",False,1253.0
+TCGA-C9-A47Z,72,female,asian,M0,N1,Stage III,T2,N1,Stage III,T2,no,"Tongue, NOS","Tongue, NOS",True,191
+TCGA-CV-5431,73,male,white,M0,N2,Stage IVA,T3,N2c,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",True,522
+TCGA-CV-A45Q,69,female,white,M0,N1,Stage IVC,T4a,N0,Stage IVA,T4a,no,"Mouth, NOS","Mouth, NOS",True,5152
+TCGA-CQ-5332,87,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,317
+TCGA-CV-7435,57,female,white,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T3,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,4680
+TCGA-CV-7440,38,male,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Larynx, NOS","Larynx, NOS",True,675
+TCGA-CN-A6V7,40,male,white,M0,N2b,Stage IVA,T2,N2b,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",False,594.0
+TCGA-QK-AA3J,69,male,black or african american,M0,N0,Stage I,T1,N0,Stage I,T1,no,"Larynx, NOS","Larynx, NOS",False,466.0
+TCGA-DQ-7593,58,male,white,M0,N1,Stage IVA,T4a,NX,Stage IVA,TX,yes,"Base of tongue, NOS","Base of tongue, NOS",False,1224.0
+TCGA-CR-7390,67,male,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",False,1508.0
+TCGA-CQ-A4CB,59,male,white,M0,N0,Stage II,T2,N1,Stage III,T1,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,893.0
+TCGA-UF-A7JJ,68,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,549.0
+TCGA-CN-6994,67,male,white,M0,N2b,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1183.0
+TCGA-CR-5247,48,male,black or african american,M0,N1,Stage III,T3,NX,Stage IVA,TX,no,"Tonsil, NOS","Tonsil, NOS",False,358.0
+TCGA-CN-6023,73,male,white,M0,N0,Stage IVA,T4a,N2c,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",False,1584.0
+TCGA-CQ-A4C9,56,male,white,MX,NX,Stage IVA,TX,N1,Stage III,T2,no,Anterior floor of mouth,Anterior floor of mouth,False,707.0
+TCGA-BA-5558,65,male,white,M0,N1,Stage IVA,T4a,NX,Stage IVA,TX,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1995.0
+TCGA-CV-A6JT,65,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,852.0
+TCGA-MT-A51W,52,female,white,M0,NX,Stage I,T1,N0,Stage I,T1,no,"Tonsil, NOS","Tonsil, NOS",False,437.0
+TCGA-CQ-7071,76,female,white,M0,N1,Stage IVA,T4a,N1,Stage III,T2,no,"Mouth, NOS","Mouth, NOS",False,1311.0
+TCGA-CN-A49B,71,male,white,M0,N1,Stage III,T3,N1,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",False,904.0
+TCGA-CV-A465,24,male,white,M0,N0,Stage II,T2,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",True,215
+TCGA-BA-5556,58,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,725.0
+TCGA-CN-6013,56,male,white,M0,N2b,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Gum, NOS","Gum, NOS",True,727
+TCGA-CN-4728,56,male,white,M0,N2,Stage IVA,T2,N2b,Stage IVA,T3,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1724.0
+TCGA-BA-6870,60,female,black or african american,M1,N2c,Stage IVC,T3,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",True,451
+TCGA-T2-A6X2,82,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Gum, NOS","Gum, NOS",False,987.0
+TCGA-4P-AA8J,66,male,black or african american,M0,N2a,Stage IVA,T4a,N2c,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,102.0
+TCGA-CN-A497,63,male,white,M0,N2c,Stage IVA,T2,N1,Stage III,T1,no,"Larynx, NOS","Larynx, NOS",False,1065.0
+TCGA-HD-A4C1,41,female,black or african american,M0,N2,Stage IVA,T3,N2b,Stage IVA,T4a,no,Cheek mucosa,Cheek mucosa,False,11.0
+TCGA-CQ-5324,59,male,white,M0,N2a,Stage IVA,T3,N0,Stage III,T3,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1593.0
+TCGA-CV-7238,69,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,2727.0
+TCGA-F7-A50I,72,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,92.0
+TCGA-F7-A61S,62,male,white,MX,NX,Stage IVA,TX,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",False,576.0
+TCGA-MT-A67G,53,female,white,MX,N2b,Stage IVA,T1,N2b,Stage IVA,T1,no,"Tonsil, NOS","Tonsil, NOS",False,190.0
+TCGA-CV-A45U,59,male,white,M0,N0,Stage IVA,T4,N2b,Stage IVA,T4,no,"Mouth, NOS","Mouth, NOS",True,1079
+TCGA-P3-A6T7,55,male,white,M0,N1,Stage III,T3,N2b,Stage IVA,T3,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,487
+TCGA-BA-4076,39,male,white,M0,N2c,Stage IVA,T3,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",True,415
+TCGA-BA-5557,41,female,white,M0,N2,Stage IVA,T2,N1,Stage III,T1,yes,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,623.0
+TCGA-CN-4739,71,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,1394
+TCGA-CV-6952,65,female,white,M0,N0,Stage III,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,185
+TCGA-BB-7872,63,male,asian,M0,N2c,Stage IVA,T2,N0,Stage I,T1,no,"Mouth, NOS","Mouth, NOS",False,1168.0
+TCGA-P3-A5QA,41,male,white,M0,N0,Stage II,T2,NX,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,2182.0
+TCGA-CV-7424,67,male,asian,M0,N2a,Stage IVA,T4a,N2b,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",True,453
+TCGA-IQ-A61L,72,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,416.0
+TCGA-F7-7848,47,male,white,M0,N1,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1131.0
+TCGA-UF-A7J9,75,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1358.0
+TCGA-CR-7391,36,female,white,M0,N0,Stage I,T1,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,913.0
+TCGA-CV-A45T,64,female,white,M0,N0,Stage II,T2,N0,Stage IVA,T1,no,"Tongue, NOS","Tongue, NOS",True,4856
+TCGA-CQ-6221,79,male,white,M0,N0,Stage II,T2,NX,Stage IVA,T2,yes,"Tongue, NOS","Tongue, NOS",False,1000.0
+TCGA-D6-8569,52,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,770.0
+TCGA-CV-6436,62,male,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",False,1899.0
+TCGA-CR-7369,59,male,white,M0,N0,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,1090
+TCGA-F7-A50G,66,male,white,M0,N0,Stage IVA,T4a,N1,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",False,616.0
+TCGA-CV-A6JO,69,male,white,M0,N2c,Stage IVA,T4,N2c,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,197
+TCGA-QK-A8ZA,60,male,black or african american,MX,N2b,Stage IVA,T2,N2b,Stage IVA,T2,no,"Oropharynx, NOS","Oropharynx, NOS",True,371
+TCGA-CR-7370,72,female,white,M0,N0,Stage II,T2,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",False,105.0
+TCGA-CN-A6V3,61,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",False,742.0
+TCGA-TN-A7HI,56,male,white,M0,N0,Stage I,T1,N2b,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",False,412.0
+TCGA-BA-5555,54,male,black or african american,M0,N2c,Stage IVA,T2,N2c,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",False,520.0
+TCGA-QK-A8Z9,56,male,black or african american,M0,N2b,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,449
+TCGA-CR-6467,59,male,white,M0,N2b,Stage IVA,T2,N1,Stage III,T2,no,"Tonsil, NOS","Tonsil, NOS",False,1777.0
+TCGA-DQ-7588,66,male,white,M0,N1,Stage III,T2,NX,Stage IVA,TX,yes,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,427
+TCGA-CV-6943,74,male,white,M0,N0,Stage III,T3,NX,Stage III,T3,no,"Base of tongue, NOS","Base of tongue, NOS",True,602
+TCGA-CV-7407,67,female,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,1081
+TCGA-CV-6940,80,female,white,M0,N0,Stage I,T1,N1,Stage III,T2,no,Cheek mucosa,Cheek mucosa,True,804
+TCGA-T2-A6WX,73,female,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,209
+TCGA-CV-6956,67,male,white,M0,N2c,Stage IVA,T4a,N1,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",True,217
+TCGA-D6-6515,82,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",True,403
+TCGA-CQ-7068,80,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,yes,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1309.0
+TCGA-CV-7178,64,female,white,M0,N1,Stage IVA,T4a,N2,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,2166
+TCGA-P3-A6T8,54,male,white,M0,N0,Stage IVA,T4a,N2,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,400.0
+TCGA-F7-A61W,51,male,asian,MX,NX,Stage IVA,TX,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,14.0
+TCGA-CV-5973,62,female,white,M0,N0,Stage III,T3,N1,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",False,2641.0
+TCGA-CN-6012,66,male,white,M0,N1,Stage III,T3,N2c,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",False,1460.0
+TCGA-CV-7100,66,male,white,M0,N0,Stage II,T2,N1,Stage III,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,274
+TCGA-IQ-A61H,76,male,white,MX,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,1138.0
+TCGA-CV-7428,47,male,white,M0,N2a,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,1671
+TCGA-CQ-6225,65,male,white,M0,N0,Stage II,T2,N0,Stage III,T3,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,403
+TCGA-CV-6951,57,male,white,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,915
+TCGA-CV-A45R,46,male,white,M0,N1,Stage III,T3,N1,Stage III,T2,no,"Tongue, NOS","Tongue, NOS",False,5480.0
+TCGA-DQ-5630,73,male,white,M0,N1,Stage III,T3,NX,Stage IVA,TX,no,"Tongue, NOS","Tongue, NOS",False,1030.0
+TCGA-P3-A6T6,53,male,white,M0,N0,Stage IVA,T4,NX,Stage IVA,T4a,no,Lower gum,Lower gum,True,395
+TCGA-CR-7402,68,male,white,M0,N0,Stage III,T3,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",False,911.0
+TCGA-HD-A6HZ,79,female,white,M0,N0,Stage II,T2,N1,Stage III,T2,no,"Tongue, NOS","Tongue, NOS",False,111.0
+TCGA-CN-6020,58,male,black or african american,M0,N2c,Stage IVA,T3,N1,Stage III,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,205
+TCGA-CV-6936,68,male,white,M0,N2b,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,166
+TCGA-CV-7263,64,male,black or african american,M0,NX,Stage II,T2,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,560
+TCGA-T2-A6WZ,53,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Base of tongue, NOS","Base of tongue, NOS",True,484
+TCGA-CV-A45V,87,female,white,M0,N0,Stage IVA,T4,N0,Stage IVA,T4,no,"Mouth, NOS","Mouth, NOS",True,32
+TCGA-CV-5436,65,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,584
+TCGA-CN-4723,67,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1699.0
+TCGA-CV-7416,29,female,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,763
+TCGA-CQ-6220,69,male,white,M0,N1,Stage III,T2,N0,Stage III,T3,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,985
+TCGA-CN-4738,53,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,436
+TCGA-UF-A7JA,66,female,white,M0,N1,Stage IVA,T4a,N1,Stage IVA,T4a,no,Cheek mucosa,Cheek mucosa,False,2265.0
+TCGA-CR-6481,47,male,white,M0,N2a,Stage IVA,T2,N0,Stage IVA,T4a,no,"Tonsil, NOS","Tonsil, NOS",False,311.0
+TCGA-CR-6487,50,male,white,M0,N0,Stage II,T2,N0,Stage I,T1,no,"Tonsil, NOS","Tonsil, NOS",False,234.0
+TCGA-CV-6962,65,male,white,M0,N0,Stage III,T3,NX,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,126
+TCGA-KU-A6H8,41,male,white,M0,N0,Stage I,T1,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",True,327
+TCGA-F7-A622,75,male,white,MX,NX,Stage IVA,TX,NX,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",True,359
+TCGA-CV-7097,53,male,white,M0,N0,Stage III,T3,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,385
+TCGA-HL-7533,65,male,white,M0,N2b,Stage IVA,T2,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1057.0
+TCGA-BB-7871,64,female,white,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Base of tongue, NOS","Base of tongue, NOS",False,750.0
+TCGA-CR-5250,71,male,white,M0,N0,Stage II,T2,NX,Stage IVA,TX,no,"Base of tongue, NOS","Base of tongue, NOS",False,799.0
+TCGA-CV-A45O,57,male,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Gum, NOS","Gum, NOS",False,851.0
+TCGA-CN-6021,63,female,white,M0,N0,Stage III,T3,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",True,276
+TCGA-CR-6474,51,male,white,M0,N2a,Stage IVA,T3,N2b,Stage IVA,T2,no,"Larynx, NOS","Larynx, NOS",True,564
+TCGA-CR-7385,42,male,white,M0,N2b,Stage IVA,T2,NX,Stage IVA,T1,no,"Tonsil, NOS","Tonsil, NOS",False,997.0
+TCGA-CQ-5330,69,female,white,M0,N1,Stage III,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",False,1897.0
+TCGA-CQ-6229,61,male,white,M0,N1,Stage III,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,1179.0
+TCGA-HD-A634,56,male,white,M0,N1,Stage III,T3,N2b,Stage IVA,T3,no,"Tonsil, NOS","Tonsil, NOS",True,130
+TCGA-CV-A6K2,79,male,white,M0,N0,Stage II,T2,N0,Stage IVA,T4,no,"Mouth, NOS","Mouth, NOS",True,317
+TCGA-CN-A642,57,male,white,M0,N2c,Stage IVA,T3,N3,Stage IVB,T4a,no,"Tongue, NOS","Tongue, NOS",True,82
+TCGA-BA-A8YP,50,male,black or african american,M0,N3,Stage IVB,T4,N3,Stage IVB,T4a,no,"Oropharynx, NOS","Oropharynx, NOS",False,499.0
+TCGA-CN-A499,60,female,white,M0,N0,Stage I,T1,N0,Stage II,T2,no,"Tonsil, NOS","Tonsil, NOS",False,717.0
+TCGA-CN-A63T,60,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",False,225.0
+TCGA-CR-7397,44,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",False,754.0
+TCGA-HD-7917,62,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,836
+TCGA-CV-7437,77,male,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Larynx, NOS","Larynx, NOS",True,506
+TCGA-CV-6953,80,female,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,1641
+TCGA-CV-5430,61,male,white,M0,N2b,Stage IVA,T4a,N2a,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,4241.0
+TCGA-BA-5151,72,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,Cheek mucosa,Cheek mucosa,False,722.0
+TCGA-P3-A6T2,45,male,white,M0,N0,Stage II,T2,N2b,Stage IVA,T3,no,Cheek mucosa,Cheek mucosa,False,2298.0
+TCGA-BA-4074,69,male,white,M0,N2c,Stage IVA,T3,N2c,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",True,462
+TCGA-CR-7395,80,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,930.0
+TCGA-UF-A71B,50,male,white,M0,N1,Stage IVA,T4a,N0,Stage IVA,T4,no,"Gum, NOS","Gum, NOS",False,1506.0
+TCGA-BB-A5HZ,65,male,white,M0,N1,Stage IVA,T4,N1,Stage IVA,T4a,no,"Mouth, NOS","Mouth, NOS",False,827.0
+TCGA-DQ-7590,51,male,white,M0,N2b,Stage IVA,T1,NX,Stage IVA,TX,no,"Tonsil, NOS","Tonsil, NOS",False,1413.0
+TCGA-CR-7365,60,male,white,M0,N2b,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1191.0
+TCGA-CR-5248,53,male,white,M0,N2c,Stage IVA,T4a,NX,Stage IVA,TX,no,"Tonsil, NOS","Tonsil, NOS",False,1663.0
+TCGA-CR-6492,78,male,white,M0,N1,Stage IVA,T4a,N1,Stage III,T2,no,Hard palate,Hard palate,False,479.0
+TCGA-CR-6484,67,female,asian,M0,N0,Stage IVA,T4a,N2,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,354.0
+TCGA-CV-7104,61,female,white,M0,N2,Stage IVA,T2,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",True,393
+TCGA-MZ-A6I9,68,male,white,M0,N2b,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Oropharynx, NOS","Oropharynx, NOS",True,489
+TCGA-KU-A6H7,55,female,white,M0,N2a,Stage IVA,T2,N2a,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",False,586.0
+TCGA-QK-A8Z8,60,female,black or african american,M1,N1,Stage IVC,T3,N1,Stage IVC,T3,no,"Larynx, NOS","Larynx, NOS",True,171
+TCGA-CV-7409,43,male,black or african american,M0,N3,Stage IVB,T4a,N3,Stage IVB,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,543
+TCGA-CX-7086,53,male,black or african american,M0,N2c,Stage IVA,T4a,N1,Stage III,T3,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,573.0
+TCGA-CV-7245,62,male,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,797.0
+TCGA-CQ-A4CH,58,male,asian,M0,N2c,Stage IVA,T4a,N0,Stage II,T2,no,Border of tongue,Border of tongue,True,379
+TCGA-CN-6010,53,male,white,M0,N0,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,1523.0
+TCGA-CV-A6JU,61,female,white,M0,N0,Stage IVA,T4a,N0,Stage IVB,T4b,no,"Tongue, NOS","Tongue, NOS",False,110.0
+TCGA-UF-A719,54,male,white,M0,N0,Stage III,T3,N0,Stage II,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,1663.0
+TCGA-CV-7413,74,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,294
+TCGA-BA-5153,51,male,white,M0,N1,Stage III,T2,NX,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",True,1762
+TCGA-BA-A6D8,59,male,black or african american,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,850.0
+TCGA-CN-A49C,67,male,white,M0,N2b,Stage IVA,T4a,NX,Stage IVA,TX,no,"Tonsil, NOS","Tonsil, NOS",False,645.0
+TCGA-CR-7376,83,male,white,M0,N0,Stage II,T2,N1,Stage III,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,972.0
+TCGA-TN-A7HJ,51,male,white,M0,NX,Stage III,T3,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,403.0
+TCGA-BA-A6DF,80,female,white,M0,N2b,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,238
+TCGA-CR-6493,69,male,black or african american,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Tongue, NOS","Tongue, NOS",True,282
+TCGA-D6-A6ES,50,male,white,M0,N1,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,389.0
+TCGA-DQ-5624,43,female,white,M0,N1,Stage IVA,T4a,NX,Stage IVA,TX,no,"Tongue, NOS","Tongue, NOS",False,1778.0
+TCGA-F7-8298,58,male,white,M0,N0,Stage I,T1,N0,Stage I,T1,no,"Larynx, NOS","Larynx, NOS",False,995.0
+TCGA-CN-5358,60,male,white,M0,N1,Stage III,T2,N0,Stage II,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,261
+TCGA-CN-4722,61,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Larynx, NOS","Larynx, NOS",False,1483.0
+TCGA-H7-A6C5,65,male,white,M0,N1,Stage III,T3,N0,Stage II,T2,yes,"Larynx, NOS","Larynx, NOS",False,642.0
+TCGA-CR-6477,56,female,white,M0,N2b,Stage IVA,T3,N0,Stage IVA,T4a,no,"Base of tongue, NOS","Base of tongue, NOS",False,514.0
+TCGA-BA-A6DG,49,male,white,M0,N2b,Stage IVA,T4a,NX,Stage IVA,TX,no,"Tongue, NOS","Tongue, NOS",True,69
+TCGA-RS-A6TO,82,female,white,M0,N2c,Stage IVA,T4,N2c,Stage IVA,T4,no,"Mouth, NOS","Mouth, NOS",True,387
+TCGA-CN-A63V,59,male,white,M0,N0,Stage IVA,T4,N0,Stage IVA,T4a,no,Cheek mucosa,Cheek mucosa,False,679.0
+TCGA-IQ-A61O,43,male,white,MX,N2b,Stage IVA,T2,N2b,Stage IVA,T2,no,"Oropharynx, NOS","Oropharynx, NOS",True,421
+TCGA-HD-8635,61,female,white,M0,N1,Stage III,T1,N1,Stage III,T1,yes,"Tongue, NOS","Tongue, NOS",False,695.0
+TCGA-F7-A620,47,male,white,MX,NX,Stage IVA,TX,N1,Stage III,T3,no,"Base of tongue, NOS","Base of tongue, NOS",False,543.0
+TCGA-BB-4227,66,male,white,M0,N2b,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Hypopharynx, NOS","Hypopharynx, NOS",False,134.0
+TCGA-CN-5369,90,female,white,M0,N1,Stage IVA,T4a,N0,Stage IVA,T4a,no,Hard palate,Hard palate,True,1
+TCGA-IQ-A61I,63,male,black or african american,M0,N2a,Stage IVA,T1,N2b,Stage IVA,T1,no,"Tonsil, NOS","Tonsil, NOS",True,2
+TCGA-CR-6480,53,male,white,M0,N2a,Stage IVA,T2,N0,Stage IVA,T4a,no,"Tonsil, NOS","Tonsil, NOS",False,362.0
+TCGA-BA-6871,75,male,white,M0,N2b,Stage IVA,T3,NX,Stage IVA,TX,yes,"Base of tongue, NOS","Base of tongue, NOS",True,108
+TCGA-BA-A4IH,57,male,white,M0,N2b,Stage IVA,T2,N1,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",False,622.0
+TCGA-QK-A6IJ,71,male,white,M0,N0,Stage II,T2,N1,Stage III,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,387.0
+TCGA-BA-6873,28,male,white,M0,N2b,Stage IVA,T2,N2b,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",False,122.0
+TCGA-CN-5359,59,male,white,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,377
+TCGA-MT-A7BN,74,male,white,M0,N2b,Stage IVA,T2,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,469.0
+TCGA-HD-A633,74,male,white,M0,N0,Stage IVA,T4,N0,Stage IVA,T4a,no,"Mouth, NOS","Mouth, NOS",False,421.0
+TCGA-QK-A6IH,65,female,white,M0,N1,Stage IVA,T4a,N2b,Stage IVB,T4b,no,"Gum, NOS","Gum, NOS",False,653.0
+TCGA-BB-4225,73,male,white,M0,N2c,Stage IVA,T3,NX,Stage IVA,TX,no,"Base of tongue, NOS","Base of tongue, NOS",False,146.0
+TCGA-CV-7427,73,female,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,4760
+TCGA-CV-7414,78,male,white,M0,N1,Stage III,T3,N2b,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,14
+TCGA-BA-A6DD,44,male,black or african american,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,173
+TCGA-CV-7446,66,male,white,M0,N0,Stage II,T2,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",True,1093
+TCGA-IQ-A61G,57,male,white,MX,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,360.0
+TCGA-CV-7177,82,female,white,M0,N0,Stage I,T1,NX,Stage II,T2,no,"Larynx, NOS","Larynx, NOS",True,663
+TCGA-CV-5441,58,male,white,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,2886.0
+TCGA-BA-4078,83,male,white,M0,N2a,Stage IVA,T2,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,276
+TCGA-P3-A6T4,54,male,white,M0,N1,Stage IVA,T4,N1,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,62
+TCGA-CR-5249,35,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tonsil, NOS","Tonsil, NOS",False,1152.0
+TCGA-BA-A6DL,59,male,white,M0,N0,Stage III,T3,N0,Stage IVA,T0,no,"Oropharynx, NOS","Oropharynx, NOS",False,623.0
+TCGA-CV-7433,49,male,white,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,601
+TCGA-BB-4228,50,male,white,M0,N0,Stage II,T2,NX,Stage III,T3,no,"Base of tongue, NOS","Base of tongue, NOS",False,559.0
+TCGA-BA-A6DI,62,male,black or african american,M0,N0,Stage III,T3,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",True,336
+TCGA-BA-5149,47,male,white,M0,N2b,Stage IVA,T3,N2c,Stage IVA,T3,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,806
+TCGA-CV-5435,57,male,white,M0,N0,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,2319
+TCGA-BB-A6UO,61,female,white,MX,N2,Stage IVA,T3,N2b,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,268
+TCGA-CR-6470,38,male,white,M0,N2c,Stage IVA,T1,N0,Stage II,T2,no,"Tonsil, NOS","Tonsil, NOS",False,1521.0
+TCGA-H7-8502,50,male,white,M0,N2b,Stage IVA,T4a,N2b,Stage IVA,T4a,no,Retromolar area,Retromolar area,False,458.0
+TCGA-CR-7404,53,male,white,M0,N2b,Stage IVA,T3,NX,Stage IVA,TX,no,"Tonsil, NOS","Tonsil, NOS",False,1472.0
+TCGA-CR-7394,70,male,white,M0,N2c,Stage IVA,T3,N0,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",False,1346.0
+TCGA-CV-7180,34,male,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",True,327
+TCGA-CV-7425,77,female,white,M0,N0,Stage III,T3,NX,Stage III,T3,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,1718
+TCGA-IQ-A61E,55,female,white,MX,N0,Stage III,T3,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",False,1147.0
+TCGA-CV-A6K0,58,male,white,M0,N0,Stage II,T2,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,606.0
+TCGA-CV-6433,57,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,641.0
+TCGA-CQ-7072,51,male,white,M0,N0,Stage IVA,T4a,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,2359.0
+TCGA-IQ-A61J,54,male,white,M0,N2b,Stage IVA,T2,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,1021.0
+TCGA-CN-5374,56,female,white,M0,N2,Stage IVA,T2,N2,Stage IVA,T2,no,"Tonsil, NOS","Tonsil, NOS",True,1732
+TCGA-CV-7095,87,female,white,M0,N2a,Stage IVA,T1,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,572
+TCGA-DQ-7592,57,male,american indian or alaska native,M0,N2b,Stage IVA,T4a,NX,Stage IVA,TX,no,"Tongue, NOS","Tongue, NOS",False,1143.0
+TCGA-BB-7870,58,male,white,M0,N2b,Stage IVA,T3,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,2016.0
+TCGA-CQ-6224,52,male,white,M0,N0,Stage II,T2,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,1721.0
+TCGA-CV-5432,68,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",False,3930.0
+TCGA-IQ-7631,60,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,Cheek mucosa,Cheek mucosa,False,1172.0
+TCGA-UF-A7JD,71,male,white,M0,N0,Stage IVA,T4a,N2b,Stage IVA,T4,no,Cheek mucosa,Cheek mucosa,True,739
+TCGA-CV-7253,58,male,black or african american,M0,N0,Stage II,T2,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,361
+TCGA-CQ-6223,69,male,white,M0,N0,Stage IVA,T4a,N0,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1428.0
+TCGA-T3-A92N,79,male,black or african american,M1,N1,Stage IVC,T1,N2c,Stage IVA,T2,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,95
+TCGA-T3-A92M,52,male,black or african american,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,417.0
+TCGA-CV-5434,60,male,black or african american,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,3314
+TCGA-CQ-5331,73,female,white,M0,N0,Stage IVA,T4a,NX,Stage IVA,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1399.0
+TCGA-QK-A6V9,56,male,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Tonsil, NOS","Tonsil, NOS",False,833.0
+TCGA-CV-7183,53,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,3981.0
+TCGA-CR-7379,78,female,white,M0,N2b,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1036.0
+TCGA-HD-A6I0,56,male,white,M0,NX,Stage III,T3,N1,Stage IVA,T4a,no,"Mouth, NOS","Mouth, NOS",False,210.0
+TCGA-CN-4733,61,male,white,M0,N0,Stage I,T1,N1,Stage III,T1,no,"Tongue, NOS","Tongue, NOS",False,1586.0
+TCGA-CQ-5323,82,male,white,M0,N0,Stage III,T3,N0,Stage I,T1,yes,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,1466.0
+TCGA-CV-7430,56,male,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,495
+TCGA-CQ-A4CA,61,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Ventral surface of tongue, NOS","Ventral surface of tongue, NOS",False,5480.0
+TCGA-CQ-5326,67,male,white,M0,N2b,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,89
+TCGA-D6-A4ZB,61,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",False,376.0
+TCGA-CV-A460,72,male,white,M0,N2b,Stage IVA,T3,N2,Stage IVA,T1,no,"Larynx, NOS","Larynx, NOS",True,1838
+TCGA-CV-7421,76,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,2
+TCGA-CQ-7067,75,female,white,M0,N0,Stage I,T1,N0,Stage I,T1,yes,"Mouth, NOS","Mouth, NOS",False,509.0
+TCGA-CQ-A4CE,76,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,897.0
+TCGA-CQ-6222,63,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,2016.0
+TCGA-CV-5978,53,female,black or african american,M0,N3,Stage IVB,T4a,N3,Stage IVB,T4a,no,"Larynx, NOS","Larynx, NOS",True,215
+TCGA-CR-7398,53,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Larynx, NOS","Larynx, NOS",False,156.0
+TCGA-CN-5356,56,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",False,1409.0
+TCGA-CR-7401,64,male,white,M0,N0,Stage I,T1,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,1077.0
+TCGA-CQ-6228,71,female,white,M0,N1,Stage III,T2,N2b,Stage IVA,T1,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,456
+TCGA-P3-A6T0,47,female,white,M0,N2b,Stage IVA,T4,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",False,578.0
+TCGA-CN-4740,79,female,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Mouth, NOS","Mouth, NOS",True,839
+TCGA-CR-5243,51,male,white,M0,N2b,Stage IVA,T3,NX,Stage IVA,TX,no,"Tonsil, NOS","Tonsil, NOS",False,2562.0
+TCGA-D6-6516,69,male,white,M0,N1,Stage III,T1,N0,Stage I,T1,no,"Lip, NOS","Lip, NOS",False,773.0
+TCGA-CV-A6JE,78,male,white,M0,N0,Stage II,T2,N0,Stage IVA,T4a,no,"Mouth, NOS","Mouth, NOS",False,1075.0
+TCGA-CV-A45Z,75,male,white,M0,N0,Stage II,T2,N0,Stage IVA,T1,no,"Larynx, NOS","Larynx, NOS",True,1466
+TCGA-CQ-A4CG,78,female,white,M0,N0,Stage II,T2,N0,Stage III,T3,no,Cheek mucosa,Cheek mucosa,True,430
+TCGA-CV-6939,60,male,white,M0,N1,Stage IVA,T4a,N2b,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",True,666
+TCGA-CN-6011,57,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Gum, NOS","Gum, NOS",False,933.0
+TCGA-HD-7753,62,male,black or african american,M0,N0,Stage II,T2,N0,Stage I,T1,no,"Oropharynx, NOS","Oropharynx, NOS",False,866.0
+TCGA-CR-6473,68,male,white,M0,N2b,Stage IVA,T3,N0,Stage IVA,T4a,no,"Hypopharynx, NOS","Hypopharynx, NOS",False,1125.0
+TCGA-C9-A480,45,female,asian,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",False,386.0
+TCGA-DQ-5629,64,male,white,M0,N2c,Stage IVA,T4a,NX,Stage IVA,TX,yes,"Larynx, NOS","Larynx, NOS",True,941
+TCGA-CV-6941,51,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",True,342
+TCGA-CV-7432,79,male,white,M0,N1,Stage III,T2,N0,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,2570
+TCGA-BA-7269,61,male,white,M0,N1,Stage III,T2,N1,Stage III,T2,no,"Tongue, NOS","Tongue, NOS",False,1273.0
+TCGA-IQ-7630,49,male,white,M0,N0,Stage III,T3,N0,Stage II,T2,no,"Oropharynx, NOS","Oropharynx, NOS",False,485.0
+TCGA-D6-6517,59,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",False,292.0
+TCGA-H7-A6C4,35,female,white,M0,N1,Stage III,T3,N2b,Stage IVA,T2,yes,"Tongue, NOS","Tongue, NOS",True,414.0
+TCGA-CN-A640,40,female,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",True,134
+TCGA-BA-6868,53,male,black or african american,M0,N3,Stage IVB,T3,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",True,472
+TCGA-CR-7399,60,female,white,M0,N2c,Stage IVA,T4a,N2c,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",False,181.0
+TCGA-CR-6471,58,male,white,M0,N0,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,1202
+TCGA-MT-A67A,85,female,white,M0,N0,Stage I,T1,N0,Stage I,T1,no,"Tongue, NOS","Tongue, NOS",False,914.0
+TCGA-CN-6019,61,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",False,1038.0
+TCGA-H7-7774,75,female,white,M0,N0,Stage III,T3,N0,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",False,407.0
+TCGA-CV-6959,48,male,white,M0,N1,Stage III,T3,N0,Stage III,T3,no,"Tongue, NOS","Tongue, NOS",True,256
+TCGA-CR-7382,49,male,white,M0,N2c,Stage IVA,T2,N2c,Stage IVA,T2,no,"Tongue, NOS","Tongue, NOS",False,796.0
+TCGA-D6-A74Q,67,male,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",False,710.0
+TCGA-H7-8501,54,male,white,M0,N2a,Stage IVA,T4a,N1,Stage IVA,T4a,no,Cheek mucosa,Cheek mucosa,False,461.0
+TCGA-D6-A6EM,65,female,white,M0,N1,Stage III,T2,N1,Stage III,T2,no,"Mouth, NOS","Mouth, NOS",False,232.0
+TCGA-D6-A6EN,71,male,white,M0,N0,Stage III,T3,N1,Stage III,T2,no,Cheek mucosa,Cheek mucosa,False,687.0
+TCGA-HD-8314,58,male,white,M0,N1,Stage III,T1,N1,Stage III,T1,no,"Base of tongue, NOS","Base of tongue, NOS",False,670.0
+TCGA-CV-7415,60,male,white,M0,N0,Stage III,T3,N2c,Stage IVA,T4a,no,"Larynx, NOS","Larynx, NOS",True,695
+TCGA-D6-A6EK,67,male,white,M0,N1,Stage IVA,T4,N1,Stage III,T2,no,"Larynx, NOS","Larynx, NOS",False,875.0
+TCGA-CN-6989,64,male,white,M0,N2b,Stage IVA,T3,N2c,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",True,980
+TCGA-BB-A5HU,47,male,white,M0,N2b,Stage IVA,T4,N2b,Stage IVA,T4,no,"Mouth, NOS","Mouth, NOS",False,782.0
+TCGA-CQ-7064,83,female,white,M0,N1,Stage III,T3,N1,Stage III,T3,no,"Mouth, NOS","Mouth, NOS",False,1973.0
+TCGA-CV-6937,71,male,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,624
+TCGA-CV-7423,65,male,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,3059
+TCGA-CV-6955,74,female,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,334
+TCGA-CV-7254,55,male,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,1459
+TCGA-CR-6488,68,female,white,M0,N0,Stage II,T2,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,379.0
+TCGA-BB-7862,67,male,white,M0,N2b,Stage IVA,T2,N2c,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",False,1117.0
+TCGA-DQ-7595,53,male,white,M0,N0,Stage II,T2,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",False,1190.0
+TCGA-CR-7377,58,male,white,M0,N1,Stage IVA,T4a,N2c,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,279
+TCGA-BB-7864,61,male,white,M0,N2c,Stage IVA,T3,N2c,Stage IVA,T2,no,"Larynx, NOS","Larynx, NOS",False,1527.0
+TCGA-UP-A6WW,58,male,white,MX,N2c,Stage IVA,T2,N0,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",False,518.0
+TCGA-CR-7371,45,female,white,M0,N0,Stage III,T3,N1,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",True,94
+TCGA-CV-7568,48,female,white,M0,N0,Stage IVA,T4a,NX,Stage IVA,T4a,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,927
+TCGA-CV-A463,82,female,white,M0,N0,Stage IVA,T4a,N0,Stage IVA,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,23
+TCGA-BA-6869,62,male,white,M0,N0,Stage III,T3,N0,Stage III,T3,no,"Larynx, NOS","Larynx, NOS",False,644.0
+TCGA-CV-7243,50,male,white,M0,N0,Stage II,T2,N1,Stage III,T2,no,"Tongue, NOS","Tongue, NOS",False,954.0
+TCGA-D6-6823,50,male,white,M0,N1,Stage III,T3,N0,Stage II,T2,no,"Tongue, NOS","Tongue, NOS",False,701.0
+TCGA-CR-7374,67,female,white,M0,N0,Stage II,T2,NX,Stage IVA,TX,no,"Larynx, NOS","Larynx, NOS",False,30.0
+TCGA-F7-A623,70,male,white,MX,NX,Stage IVA,TX,N2b,Stage IVA,T1,no,"Larynx, NOS","Larynx, NOS",False,616.0
+TCGA-CV-6948,79,female,white,M0,N0,Stage IVA,T4a,N3,Stage IVB,T4a,no,"Floor of mouth, NOS","Floor of mouth, NOS",True,1289
+TCGA-MZ-A5BI,53,male,white,M0,N2b,Stage IVA,T2,N0,Stage IVA,T4a,no,"Tonsil, NOS","Tonsil, NOS",True,217
+TCGA-CN-4735,52,male,white,M0,N2b,Stage IVA,T3,N2b,Stage IVA,T3,no,"Larynx, NOS","Larynx, NOS",False,1737.0
+TCGA-T2-A6X0,49,male,white,M0,N2a,Stage IVA,T1,N0,Stage IVA,TX,no,"Tonsil, NOS","Tonsil, NOS",False,216.0
+TCGA-CV-6938,87,male,white,M0,N0,Stage II,T2,NX,Stage II,T2,no,"Overlapping lesion of lip, oral cavity and pharynx","Overlapping lesion of lip, oral cavity and pharynx",True,144
+TCGA-CN-6016,64,male,white,M0,N1,Stage IVA,T4a,N1,Stage IVA,T4a,no,"Tongue, NOS","Tongue, NOS",False,1443.0

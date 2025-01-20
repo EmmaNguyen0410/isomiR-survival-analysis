@@ -1,0 +1,3 @@
+id	submitter_id	entity_type	entity_id	category	classification	created_datetime	status	notes
+0a4a331b-0cc6-5e8d-aa02-e3c9baaa64aa	12085	case	47d1fcaf-3c01-43ba-9a21-0870b4ea2976	History of unacceptable prior treatment related to a prior/other malignancy	Notification	2012-11-10T00:00:00	Approved	Prior malignancy of the R larynx treated with locoregional radiation. (TCGA tumor R oral cavity)
+d20f7f49-fb32-5e1b-85c7-c983de8d4de5	11840	case	47d1fcaf-3c01-43ba-9a21-0870b4ea2976	Prior malignancy	Notification	2012-10-31T00:00:00	Approved	Prior malignancy of the R larynx treated with locoregional radiation. (TCGA tumor R oral cavity)
