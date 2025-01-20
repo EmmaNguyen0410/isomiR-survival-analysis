@@ -9,6 +9,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV, StratifiedKFold
 
+###### Data processing ########
 # Read data
 raw_df = pd.read_csv("../../data/ml_inputs/demographic_isomiRs.csv", index_col=False)
 raw_df['survival_in_days'] = raw_df['survival_in_days'].astype(float)
@@ -42,11 +43,13 @@ for train_index, test_index in cv:
     pd.DataFrame({'score': scores}).to_csv("../../data/signed_ranks_test/demographic_isomiRs/cox.csv", index=False)
 
 
-# Choose penalty strength alpha
+##### Choose penalty strength alpha ####
 coxnet_pipe = make_pipeline(StandardScaler(), CoxnetSurvivalAnalysis(l1_ratio=0.9, alpha_min_ratio=0.5, max_iter=1000))
 coxnet_pipe.fit(X_train, structured_y_train)
 estimated_alphas = coxnet_pipe.named_steps["coxnetsurvivalanalysis"].alphas_
 
+
+########## Grid Search ############
 cv = StratifiedKFold(n_splits=3, shuffle=True, random_state=random_state)
 gcv = GridSearchCV(
     make_pipeline(StandardScaler(), CoxnetSurvivalAnalysis(l1_ratio=0.9)),

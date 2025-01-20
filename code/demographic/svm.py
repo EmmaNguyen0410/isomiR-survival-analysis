@@ -46,35 +46,21 @@ for train_index, test_index in cv:
     pd.DataFrame({'score': scores}).to_csv("../../data/signed_ranks_test/demographic/svm.csv", index=False)
 
 
-# Train model
-# {'alpha': 0.1, 'kernel': 'poly', 'solver': 'osqp'}
-# param_grid = {"alpha": [0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000], 'solver':['ecos', 'osqp'], 'kernel': ['linear', 'poly', 'rbf', 'sigmoid', 'cosine']}
-# kssvm = MinlipSurvivalAnalysis(max_iter=10000)
-# kgcv = GridSearchCV(kssvm, param_grid, scoring=score_survival_model, n_jobs=1, refit=False, cv=cv)
-# kgcv = kgcv.fit(X_train, structured_y_train)
-# print(kgcv.best_score_, kgcv.best_params_)
-# estimator = MinlipSurvivalAnalysis(max_iter=10000)
-# estimator.set_params(**kgcv.best_params_)
-# estimator.fit(X_train, structured_y_train)
-# print(score_survival_model(estimator, X_train, structured_y_train)) # 0.6983804311403998
-# print(score_survival_model(estimator, X_test, structured_y_test)) # 0.585455764075067
+########## Grid Search ############
+param_grid = {"alpha": [0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000], 'solver':['ecos', 'osqp'], 'kernel': ['linear', 'poly', 'rbf', 'sigmoid', 'cosine']}
+kssvm = MinlipSurvivalAnalysis(max_iter=10000)
+kgcv = GridSearchCV(kssvm, param_grid, scoring=score_survival_model, n_jobs=1, refit=False, cv=cv)
+kgcv = kgcv.fit(X_train, structured_y_train)
+print(kgcv.best_score_, kgcv.best_params_)
+
+#### Train model using best params #####
+estimator = MinlipSurvivalAnalysis(max_iter=10000)
+estimator.set_params(**kgcv.best_params_)
+estimator.fit(X_train, structured_y_train)
+print(score_survival_model(estimator, X_train, structured_y_train)) # 0.6983804311403998
+print(score_survival_model(estimator, X_test, structured_y_test)) # 0.585455764075067
 
 ##### feature importance
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-from sklearn.inspection import permutation_importance
-result = permutation_importance(estimator, X_test, structured_y_test, n_repeats=15, random_state=random_state)
-print(pd.DataFrame(
-    {
-        k: result[k]
-        for k in (
-            "importances_mean",
-            "importances_std",
-        )
-    },
-    index=X_test.columns,
-).sort_values(by="importances_mean", ascending=False))
-
 #age_at_index                                                0.059581   
 #ajcc_pathologic_n                                           0.054131   
 #ajcc_pathologic_stage                                       0.044233   
@@ -101,3 +87,17 @@ print(pd.DataFrame(
 #tissue_or_organ_of_origin_Hypopharynx, NOS                  0.000188   
 #site_of_resection_or_biopsy_Hypopharynx, NOS                0.000188   
 #ajcc_clinical_t                                             0.000024
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+from sklearn.inspection import permutation_importance
+result = permutation_importance(estimator, X_test, structured_y_test, n_repeats=15, random_state=random_state)
+print(pd.DataFrame(
+    {
+        k: result[k]
+        for k in (
+            "importances_mean",
+            "importances_std",
+        )
+    },
+    index=X_test.columns,
+).sort_values(by="importances_mean", ascending=False))

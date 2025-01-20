@@ -79,26 +79,25 @@ print(rsf.score(X_train, structured_y_train)) # 0.7528984697866636
 # Score on test set 
 print(rsf.score(X_test, structured_y_test)) # 0.6462801608579088
 
-###### Predict survival function #####
-# surv = rsf.predict_survival_function(X_test, return_array = True)
-# for i, s in enumerate(surv):
-#     print(i, '===', s)
-#     plt.step(rsf.unique_times_, s, where='post', label=str(i))
-# plt.ylabel("Survival probability")
-# plt.xlabel("Time in days")
-# plt.legend()
-# plt.grid(True)
+##### Predict survival function #####
+surv = rsf.predict_survival_function(X_test, return_array = True)
+for i, s in enumerate(surv):
+    print(i, '===', s)
+    plt.step(rsf.unique_times_, s, where='post', label=str(i))
+plt.ylabel("Survival probability")
+plt.xlabel("Time in days")
+plt.legend()
+plt.grid(True)
 
 
-###### Predict cumulative hazard function #####
-# surv = rsf.predict_cumulative_hazard_function(X_test, return_array=True)
-
-# for i, s in enumerate(surv):
-#     plt.step(rsf.unique_times_, s, where="post", label=str(i))
-# plt.ylabel("Cumulative hazard")
-# plt.xlabel("Time in days")
-# plt.legend()
-# plt.grid(True)
+##### Predict cumulative hazard function #####
+surv = rsf.predict_cumulative_hazard_function(X_test, return_array=True)
+for i, s in enumerate(surv):
+    plt.step(rsf.unique_times_, s, where="post", label=str(i))
+plt.ylabel("Cumulative hazard")
+plt.xlabel("Time in days")
+plt.legend()
+plt.grid(True)
 
 ###### Permutation to find important features #######
 # ajcc_pathologic_n                                           0.098505   
