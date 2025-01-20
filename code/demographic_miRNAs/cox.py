@@ -9,6 +9,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV, StratifiedKFold
 
+###### Data processing ########
 # Read data
 raw_df = pd.read_csv("../../data/ml_inputs/demographic_miRNAs.csv", index_col=False)
 raw_df['survival_in_days'] = raw_df['survival_in_days'].astype(float)
@@ -28,7 +29,7 @@ skf = StratifiedKFold(n_splits=6, shuffle = True, random_state = 8)
 cv = list(skf.split(X_train, y_combined))
 
 
-#### 6 cvs scores #####
+##### 6 cvs scores #####
 scores = []
 for train_index, test_index in cv:
     X_train_data, X_test_data = X_train.iloc[train_index], X_train.iloc[test_index]
@@ -43,7 +44,7 @@ for train_index, test_index in cv:
     pd.DataFrame({'score': scores}).to_csv("../../data/signed_ranks_test/demographic_miRNAs/cox.csv", index=False)
 
 
-# Choose penalty strength alpha
+##### Choose penalty strength alpha ####
 coxnet_pipe = make_pipeline(StandardScaler(), CoxnetSurvivalAnalysis(l1_ratio=0.9, alpha_min_ratio=0.5, max_iter=1000))
 coxnet_pipe.fit(X_train, structured_y_train)
 estimated_alphas = coxnet_pipe.named_steps["coxnetsurvivalanalysis"].alphas_
@@ -57,21 +58,6 @@ gcv = GridSearchCV(
     n_jobs=1,
 ).fit(X_train, structured_y_train)
 cv_results = pd.DataFrame(gcv.cv_results_)
-
-alphas = cv_results.param_coxnetsurvivalanalysis__alphas.map(lambda x: x[0])
-mean = cv_results.mean_test_score
-std = cv_results.std_test_score
-
-fig, ax = plt.subplots(figsize=(9, 6))
-ax.plot(alphas, mean)
-ax.fill_between(alphas, mean - std, mean + std, alpha=0.15)
-ax.set_xscale("log")
-ax.set_ylabel("concordance index")
-ax.set_xlabel("alpha")
-ax.axvline(gcv.best_params_["coxnetsurvivalanalysis__alphas"][0], c="C1")
-ax.axhline(0.5, color="grey", linestyle="--")
-ax.grid(True)
-plt.show()
 
 ####### Feature important of best model ######
 # tissue_or_organ_of_origin_Ventral surface of tongue, NOS
@@ -106,5 +92,3 @@ coxnet_pred.fit(X_train, structured_y_train)
 print(gcv.best_params_) # {'coxnetsurvivalanalysis__alphas': [0.08338561812948596]}
 print("Train: ", coxnet_pred.score(X_train, structured_y_train)) # 0.6358762426002458
 print("Test: ", coxnet_pred.score(X_test, structured_y_test)) # 0.6169571045576407
-
-# https://github.com/sebp/scikit-survival/issues/41

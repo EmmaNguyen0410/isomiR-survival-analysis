@@ -28,7 +28,7 @@ y_combined = np.array(y_combined, dtype=[('status', '?'), ('survival_in_days', '
 skf = StratifiedKFold(n_splits=6, shuffle = True, random_state = 8)
 cv = list(skf.split(X_train, y_combined))
 
-#### 6 cvs scores #####
+##### 6 cvs scores #####
 scores = []
 for train_index, test_index in cv:
     X_train_data, X_test_data = X_train.iloc[train_index], X_train.iloc[test_index]
@@ -42,12 +42,10 @@ for train_index, test_index in cv:
     # export scores to csv 
     pd.DataFrame({'score': scores}).to_csv("../../data/signed_ranks_test/demographic_isomiRs/cox.csv", index=False)
 
-
 ##### Choose penalty strength alpha ####
 coxnet_pipe = make_pipeline(StandardScaler(), CoxnetSurvivalAnalysis(l1_ratio=0.9, alpha_min_ratio=0.5, max_iter=1000))
 coxnet_pipe.fit(X_train, structured_y_train)
 estimated_alphas = coxnet_pipe.named_steps["coxnetsurvivalanalysis"].alphas_
-
 
 ########## Grid Search ############
 cv = StratifiedKFold(n_splits=3, shuffle=True, random_state=random_state)
@@ -59,21 +57,6 @@ gcv = GridSearchCV(
     n_jobs=1,
 ).fit(X_train, structured_y_train)
 cv_results = pd.DataFrame(gcv.cv_results_)
-
-alphas = cv_results.param_coxnetsurvivalanalysis__alphas.map(lambda x: x[0])
-mean = cv_results.mean_test_score
-std = cv_results.std_test_score
-
-fig, ax = plt.subplots(figsize=(9, 6))
-ax.plot(alphas, mean)
-ax.fill_between(alphas, mean - std, mean + std, alpha=0.15)
-ax.set_xscale("log")
-ax.set_ylabel("concordance index")
-ax.set_xlabel("alpha")
-ax.axvline(gcv.best_params_["coxnetsurvivalanalysis__alphas"][0], c="C1")
-ax.axhline(0.5, color="grey", linestyle="--")
-ax.grid(True)
-plt.show()
 
 ####### Feature important of best model ######
 # tissue_or_organ_of_origin_Ventral surface of tongue, NOS

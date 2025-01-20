@@ -60,29 +60,6 @@ print(rsf.score(X_train, structured_y_train))
 # Score on test set 
 print(rsf.score(X_test, structured_y_test))
 
-##### Brier Score ######
-
-###### Predict survival function #####
-# surv = rsf.predict_survival_function(X_test, return_array = True)
-# for i, s in enumerate(surv):
-#     print(i, '===', s)
-#     plt.step(rsf.unique_times_, s, where='post', label=str(i))
-# plt.ylabel("Survival probability")
-# plt.xlabel("Time in days")
-# plt.legend()
-# plt.grid(True)
-
-
-###### Predict cumulative hazard function #####
-# surv = rsf.predict_cumulative_hazard_function(X_test, return_array=True)
-
-# for i, s in enumerate(surv):
-#     plt.step(rsf.unique_times_, s, where="post", label=str(i))
-# plt.ylabel("Cumulative hazard")
-# plt.xlabel("Time in days")
-# plt.legend()
-# plt.grid(True)
-
 ###### Permutation to find important features #######
 # 38676      5.016077e-03         0.003181
 # 7293       2.829582e-03         0.002680

@@ -12,7 +12,7 @@ from sklearn.model_selection import GridSearchCV
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 
-###### Data processing ########
+######## Data processing ########
 # Read data
 raw_df = pd.read_csv("../../data/ml_inputs/raw_data3.csv", index_col=False)
 raw_df = raw_df.drop(['case_submitter_id'], axis=1)
@@ -26,7 +26,7 @@ y = [(y_status[i], y_survival_in_days[i]) for i in range(len(raw_df))]
 y = np.array(y, dtype=[('status', '?'), ('survival_in_days', '<f8')])
 X_train, X_test, structured_y_train, structured_y_test = train_test_split(raw_df, y, test_size=0.2, random_state=random_state, stratify=y["status"])
 
-#### 6 cvs scores #####
+##### 6 cvs scores #####
 y_cont = pd.qcut(structured_y_train['survival_in_days'], q=75, labels=False)
 y_combined = [(structured_y_train['status'][i], y_cont[i]) for i in range(len(structured_y_train))]
 y_combined = np.array(y_combined, dtype=[('status', '?'), ('survival_in_days', '<f8')])
@@ -69,7 +69,6 @@ print(best_params)
 print(grid_search_tree.best_score_)
 
 #### Train model using best params #####
-# n_estimators=50, max_features = 10, min_samples_leaf = 10
 rsf = RandomSurvivalForest(
     n_estimators=50, max_features = 10, min_samples_leaf= 10, random_state=random_state
 )
@@ -78,26 +77,6 @@ rsf.fit(X_train, structured_y_train)
 print(rsf.score(X_train, structured_y_train)) # 0.7528984697866636
 # Score on test set 
 print(rsf.score(X_test, structured_y_test)) # 0.6462801608579088
-
-##### Predict survival function #####
-surv = rsf.predict_survival_function(X_test, return_array = True)
-for i, s in enumerate(surv):
-    print(i, '===', s)
-    plt.step(rsf.unique_times_, s, where='post', label=str(i))
-plt.ylabel("Survival probability")
-plt.xlabel("Time in days")
-plt.legend()
-plt.grid(True)
-
-
-##### Predict cumulative hazard function #####
-surv = rsf.predict_cumulative_hazard_function(X_test, return_array=True)
-for i, s in enumerate(surv):
-    plt.step(rsf.unique_times_, s, where="post", label=str(i))
-plt.ylabel("Cumulative hazard")
-plt.xlabel("Time in days")
-plt.legend()
-plt.grid(True)
 
 ###### Permutation to find important features #######
 # ajcc_pathologic_n                                           0.098505   

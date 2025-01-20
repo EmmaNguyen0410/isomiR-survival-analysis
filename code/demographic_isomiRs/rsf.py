@@ -78,27 +78,6 @@ print(rsf.score(X_train, structured_y_train)) # 0.7716742991176142
 # Score on test set 
 print(rsf.score(X_test, structured_y_test)) # 0.6605227882037533
 
-###### Predict survival function #####
-# surv = rsf.predict_survival_function(X_test, return_array = True)
-# for i, s in enumerate(surv):
-#     print(i, '===', s)
-#     plt.step(rsf.unique_times_, s, where='post', label=str(i))
-# plt.ylabel("Survival probability")
-# plt.xlabel("Time in days")
-# plt.legend()
-# plt.grid(True)
-
-
-###### Predict cumulative hazard function #####
-# surv = rsf.predict_cumulative_hazard_function(X_test, return_array=True)
-
-# for i, s in enumerate(surv):
-#     plt.step(rsf.unique_times_, s, where="post", label=str(i))
-# plt.ylabel("Cumulative hazard")
-# plt.xlabel("Time in days")
-# plt.legend()
-# plt.grid(True)
-
 ###### Permutation to find important features #######
 from sklearn.inspection import permutation_importance
 result = permutation_importance(rsf, X_test, structured_y_test, n_repeats=15, random_state=random_state)

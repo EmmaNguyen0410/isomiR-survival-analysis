@@ -7,6 +7,7 @@ from sklearn import set_config
 set_config(display="text")
 from sklearn.model_selection import train_test_split
 
+###### Data processing ########
 # Read data
 raw_df = pd.read_csv("../../data/raw_data.csv", index_col=False)
 raw_df = raw_df[raw_df['survival_in_days'] != "'--"]
@@ -28,7 +29,7 @@ def score_survival_model(model, X, y):
     result = concordance_index_censored(y["status"], y["survival_in_days"], prediction)
     return result[0]
 
-#### Train model #####
+########## Grid Search ############
 param_grid = {"alpha": [0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000], 'optimizer':['avltree', 'direct-count', 'PRSVM', 'rbtree', 'simple']}
 skf = StratifiedKFold(n_splits=3, shuffle = True, random_state = random_state)
 cv = list(skf.split(X_train, structured_y_train))
@@ -36,13 +37,15 @@ kssvm = FastSurvivalSVM(max_iter=10000)
 kgcv = GridSearchCV(kssvm, param_grid, scoring=score_survival_model, n_jobs=1, refit=False, cv=cv)
 kgcv = kgcv.fit(X_train, structured_y_train)
 print(kgcv.best_score_, kgcv.best_params_)
+
+#### Train model using best params #####
 estimator = FastSurvivalSVM(max_iter=10000)
 estimator.set_params(**kgcv.best_params_)
 estimator.fit(X_train, structured_y_train)
 print(score_survival_model(estimator, X_train, structured_y_train)) # 0.5892296767986807
 print(score_survival_model(estimator, X_test, structured_y_test)) # 0.5929260450160772
 
-### feature importance ######
+###### Permutation to find important features #######
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 from sklearn.inspection import permutation_importance

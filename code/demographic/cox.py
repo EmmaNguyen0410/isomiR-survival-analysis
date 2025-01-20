@@ -9,6 +9,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV, StratifiedKFold
 
+######## Data processing ########
 # Read data
 raw_df = pd.read_csv("../../data/ml_inputs/raw_data3.csv", index_col=False)
 raw_df = raw_df.drop(['case_submitter_id'], axis=1)

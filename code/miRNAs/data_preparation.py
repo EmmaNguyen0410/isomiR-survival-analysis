@@ -263,20 +263,20 @@ def select_feature():
     pd.DataFrame({'feature': selected_features}).to_csv("../../data/selected_features/miRNAs.csv", index=False)
 
 ## main ##
-# survival_details_df = get_survival_details()
-# sample_details_df = get_sample_details()
-# sample_details_df = sample_details_df[sample_details_df['sample_type'] == 'Primary Tumor']
-# sample_survival_details_df = survival_details_df.merge(sample_details_df, how = 'inner', on = "case_submitter_id")
+survival_details_df = get_survival_details()
+sample_details_df = get_sample_details()
+sample_details_df = sample_details_df[sample_details_df['sample_type'] == 'Primary Tumor']
+sample_survival_details_df = survival_details_df.merge(sample_details_df, how = 'inner', on = "case_submitter_id")
 
-# miR_seq_df = get_miR_seqs("../../data/annotation_guide/hairpin.fa")
-# curate_miRNA_quantification(miR_seq_df)
-# annotate_miRNA()
-# add_miRNA_ID_to_curated_miRNA_quantification()
-# set_up_normal_primary_tumour()
-# filter_de_dominant_miRNAs()
-# create_miRNA_profiles()
-# combined_curated_miRNAs = pd.read_csv("../../data/ml_inputs/miRNA_profiles.csv")
-# create_ml_input(combined_curated_miRNAs, sample_survival_details_df)
+miR_seq_df = get_miR_seqs("../../data/annotation_guide/hairpin.fa")
+curate_miRNA_quantification(miR_seq_df)
+annotate_miRNA()
+add_miRNA_ID_to_curated_miRNA_quantification()
+set_up_normal_primary_tumour()
+filter_de_dominant_miRNAs()
+create_miRNA_profiles()
+combined_curated_miRNAs = pd.read_csv("../../data/ml_inputs/miRNA_profiles.csv")
+create_ml_input(combined_curated_miRNAs, sample_survival_details_df)
 select_feature()
 
 
